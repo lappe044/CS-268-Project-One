@@ -2,6 +2,44 @@ body {
   margin: 0px;
   padding: 0px;
 }
+
+#header,
+#footer {
+  height: 50px;
+  background-color: #2d2e2e;
+}
+
+#header {
+  text-align: center;
+  padding: 30px;
+}
+
+#header a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 40px;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #2d2e2e;
+  opacity: 0.9;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+}
+
+#navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
 img {
   width: 100%;
   height: 800px;
