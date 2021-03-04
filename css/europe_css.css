@@ -29,15 +29,21 @@ body {
   position: sticky;
   position: -webkit-sticky;
   top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: space-between;
 }
 
 #navbar a {
+  box-sizing: border-box;
   float: left;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  width: 10%;
 }
 
 img {
