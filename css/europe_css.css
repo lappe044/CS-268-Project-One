@@ -52,6 +52,12 @@ body {
   width: 10%;
 }
 
+.tour_sections {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 img {
   width: 100%;
   height: 800px;
@@ -99,6 +105,13 @@ p {
 .threeImages > img {
   width: 33.33%;
   height: 300px;
+}
+
+.b-button {
+  padding: 0.5rem 2rem;
+  margin-bottom: 10px;
+  background-color: #2d342e;
+  color: #fbfbfb;
 }
 
 @media (max-width: 500px) {
