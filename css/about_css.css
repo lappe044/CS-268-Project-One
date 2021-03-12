@@ -52,6 +52,21 @@ body {
   width: 10%;
 }
 
+img {
+  margin: 10px;
+  width: 30%;
+  vertical-align: middle;
+  border-radius: 50%;
+  height: 300px;
+}
+
+#title {
+  display: inline-block;
+  text-align: center;
+  font-size: 70px;
+  width: 50%;
+}
+
 h3 {
   text-align: center;
   margin: 20px;
