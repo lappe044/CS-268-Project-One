@@ -52,18 +52,18 @@ body {
   width: 10%;
 }
 
-img {
+#founder_pic {
   margin: 10px;
   width: 30%;
   vertical-align: middle;
+  height: 250px;
   border-radius: 50%;
-  height: 300px;
 }
 
 #title {
   display: inline-block;
   text-align: center;
-  font-size: 70px;
+  font-size: 50px;
   width: 50%;
 }
 
@@ -78,4 +78,61 @@ p {
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 20px;
+}
+
+ul {
+  text-align: center;
+  list-style: none;
+}
+
+#threeImages {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+}
+
+#threeImages > img {
+  width: 33.33%;
+  height: 300px;
+}
+
+#guides {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.guide_card {
+  box-sizing: border-box;
+  width: 25%;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.guide_card > img {
+  width: 100%;
+  height: 200px;
+}
+
+@media (max-width: 500px) {
+  #founder_pic {
+    height: 150px;
+  }
+
+  #threeImages > img {
+    height: 100px;
+  }
+
+  .guide_card {
+    width: 50%;
+  }
 }
