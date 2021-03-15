@@ -84,7 +84,7 @@ body {
     padding-bottom: 20px;
   }
 
-  #guides {
+  #trip_sections {
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -93,18 +93,35 @@ body {
     width: 100%;
     margin-top: 40px;
   }
-  
-  .guide_card {
+
+
+
+  .content_card { 
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     width: 25%;
-    height: 300px;
-    border: 1px solid black;
+    height: 500px;
+    background-color: grey;
   }
   
-  .guide_card > img {
+  .content_card > img {
     width: 100%;
-    height: 200px;
+    height: 300px;
   }
+
+
+.button {
+  text-decoration: none;
+  margin-left: auto; 
+  margin-right: auto; 
+  text-align: center;
+  background-color: #fbfbfb;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  width: 30%; 
+  color: #2d342e;
+}
   
   @media (max-width: 500px) {
     .guide_card {
