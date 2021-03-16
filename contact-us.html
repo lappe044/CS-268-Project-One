@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Contact Us</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        font-family: 'Architects Daughter', cursive;
+    }
+
+    body{
+        background: url(images/switzerland.jpg) no-repeat top center;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .external{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        padding: 0 20px;
+    }
+    .contact_us{
+        max-width: 550px;
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+        border-radius: 25px;
+        display: flex;
+        box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    }
+    .input_field{
+        display: flex;
+        flex-direction: column;
+        margin: 4%;
+    }
+    .input_field, message_area{
+        width: 48%;
+    }
+
+    .input_field .input, 
+    .message_area textarea{
+        margin: 10px 0;
+        background: transparent;
+        border:0;
+        border-bottom: 2px solid rgb(187, 180, 180);
+        padding: 10px;
+        color: #c5ecfd;
+    }
+
+    .message_area
+        textarea{
+            height:212px;
+        }
+
+    ::-webkit-input-placeholder{
+        color: #c5ecfd;
+    }
+    ::-moz-input-placeholder{
+        color: #c5ecfd;
+    }
+    ::ms-input-placeholder{
+        color: #c5ecfd;
+    }
+
+    .btn{
+        background: #2e8db6;
+        text-align: center;
+        padding: 15px;
+        border-radius: 5px;
+        color: #fff;
+        cursor: pointer;
+        text-transform: uppercase;
+
+    }
+    .title{
+        color: #fff;
+    }
+    
+    @media screen and (max-width: 600px){
+        .contact_us{
+            flex-direction: column;
+        }
+        .message_area textarea{
+            height: 80px;
+        }
+        .input_field, .message_area textarea{
+            width: 100%;
+        }
+    }
+
+
+
+
+
+</style>
+<body>
+    <header>
+        <a href="home.html"><h1>Epic MT</h1></a>
+        <nav class="toggle-nav">
+            <a href="">About Us</a>
+            <a href="africa.html">Africa</a>
+            <a href="">Antartica</a>
+            <a href="asia.html">Asia</a>
+            <a href="">Europe</a>
+            <a href="north-America.html">North America</a>
+            <a href="south-America.html">South America</a>
+            <a href="">Oceania</a>
+            <a href="contact-us.html">Contact Us</a>
+        </nav>
+    </header>
+    <div class = "external">
+        <div class = "title" align ="center">
+            <h1>Contact Us</h1>
+        </div>
+    
+    <div class ="contact_us">
+
+        <div class = "input_field">
+            <input type = "text" class = "input" placeholder="Name">
+            <input type = "text" class = "input" placeholder="Email address">
+            <input type = "text" class = "input" placeholder="Phone">
+            <input type = "text" class = "input" placeholder="Subject">
+        </div>
+
+        <div class = "message_area">
+            <textarea placeholder ="Message"></textarea>
+            <div class="btn">send</div>
+        </div>
+
+
+    </div>    
+
+    </div>
+</body>
+</html>
