@@ -52,27 +52,37 @@ body {
   width: 10%;
 }
 
-#flexbox {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  margin: 40px auto 40px auto;
-  width: 60%;
+.tour_sections {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-#founder_pic {
-  border-radius: 50%;
-  width: 50%;
-  height: 300px;
+img {
+  width: 100%;
+  height: 600px;
 }
 
-#title {
-  font-size: 60px;
+.mainPicture {
+  position: relative;
+  text-align: center;
+}
+.text-overlay {
+  position: absolute;
+  font-size: 100px;
+  color: white;
+  text-shadow: 2px 2px 3px #00000070;
+  top: 15rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 h3 {
-  text-align: center;
-  margin: 20px;
+  position: relative;
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20px;
 }
 
 p {
@@ -84,59 +94,29 @@ p {
   font-family: "Times New Roman", Times, serif;
 }
 
-ul {
-  text-align: center;
-  list-style: none;
-}
-
-#threeImages {
+.threeImages {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-content: center;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 40px;
+  width: 100%;
+  margin-top: 10px;
 }
 
-#threeImages > img {
+.threeImages > img {
   width: 33.33%;
   height: 300px;
 }
 
-#guides {
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-content: center;
-  width: 100%;
-  margin-top: 40px;
-}
-
-.guide_card {
-  box-sizing: border-box;
-  width: 25%;
-  height: 300px;
-  border: 1px solid black;
-}
-
-.guide_card > img {
-  width: 100%;
-  height: 200px;
+.b-button {
+  padding: 0.5rem 2rem;
+  margin-bottom: 10px;
+  background-color: #2d342e;
+  color: #fbfbfb;
 }
 
 @media (max-width: 500px) {
-  #founder_pic {
-    height: 150px;
-  }
-
-  #threeImages > img {
+  .threeImages > img {
     height: 100px;
-  }
-
-  .guide_card {
-    width: 50%;
   }
 }
