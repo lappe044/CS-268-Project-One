@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <script src="toggle-nav.js"></script>
+        <title>South America </title>
+    </head> 
+    <body>
+        
+        <div id="top">
+            <img src="images/logo1.png" alt="">
+        </div>
+        <a href="home.html"><h1>Epic MT</h1></a>
+        <header>
+            <div onclick="toggleNav()"><img class="hamburger" src="images/hamburger.svg" alt="navigational hamburger"></div>
+            <nav class="toggle-nav">
+                <a href="about.html">About Us</a>
+                <a href="africa.html">Africa</a>
+                <a href="antartica.html">Antartica</a>
+                <a href="asia.html">Asia</a>
+                <a href="europe.html">Europe</a>
+                <a href="north-America.html">North America</a>
+                <a href="south-America.html">South America</a>
+                <a href="oceania.html">Oceania</a>
+                <a href="contact-us.html">Contact Us</a>
+            </nav>
+        </header>
+        <main>
+            <img src="images/south-america.jpg" alt="">
+            <h2 class="main-text-overlay">South America</h2>
+            <section class="about">
+                <p>Its waters are the most amazing colour, a vivid shade of turquoise that changes in intensity through the summer as the glaciers melt. Set in the rugged Valley of the Ten Peaks, Moraine Lake is surrounded by mountains, waterfalls, and rock piles, creating a scene so stunning it almost seems unreal. Sit lakeside and absorb the sights and pure mountain air, or explore further by canoeing and hiking. It’s an icon jaw-dropping place that is sure to leave a lasting impression.</p>
+            </section>
+            <section class="aconcagua">
+                <img src="images/aconcagua/acon.jpg" alt="Aconcagua">
+                <h2 class="text-overlay">Aconcagua</h2>
+                <div class="gallery">
+                    <img src="images/aconcagua/acon1.jpg" alt="view of Moraine Lake with mountains and forest in background">
+                    <img src="images/aconcagua/acon3.jpg" alt="inclined view of Moraine looking towards peak of mountain side with forest in foreground">
+                    <img src="images/aconcagua/acon2.jpg" alt="closer view of mountainside with a few scattered trees in foreground">
+                </div>
+                <h3>Andes Mountains</h3>
+                <p>Rocky Mountain scenery and abundant wildlife – from bighorn sheep to bears - are the star attractions of Banff National Park. Plunge into the Rockies on foot or by bike on an expansive network of trails. Drive past crystalline lakes and glaciers on hundreds of kilometres of paved scenic parkways or get back to nature at 14 diverse campgrounds. History lovers can explore national historic sites, while winter brings skiing, snowshoeing and sightseeing.</p>
+                <a class="sa-button">Book a Trip</a>
+            </section>
+            <section class="rain-forest">
+                <img src="images/forest/forest1.jpg" alt="tree in Amazon Rain Forest">
+                <h2 class="text-overlay">Amazonian Rain Forest</h2>
+                <div class="gallery">
+                    <img src="images/forest/forest2.jpg" alt="">
+                    <img src="images/forest/forest3.jpeg" alt="">
+                    <img src="images/forest/forest4.jpg" alt="">
+                </div>
+                <h3>Amazonian Rain Forest</h3>
+                <p>You have seen photos of the lake but they haven’t prepared you for how it feels to experience it yourself. Rounding the corner, the sight of the emerald green water and rugged peaks and glaciers hits you viscerally. You’ve never seen anything so dramatically beautiful. Late in the day, with the glowing sun dropping behind Mount Victoria, it is quiet and still. As you wander around the lakeside path it seems like the whole scene is for just you to enjoy. It is a feeling you will remember forever.</p>
+                <a class="sa-button">Book a Trip</a>
+            </section>
+            <section class="monte-fitz-roy">
+                <img src="images/monte/monte1.jpg" alt="Monte Fitz Roy">
+                <h2 class="text-overlay">Monte Fitz Roy</h2>
+                <div class="gallery">
+                    <img src="images/monte/monte2.jpg" alt="">
+                    <img src="images/monte/monte3.jpg" alt="">
+                    <img src="images/monte/monte4.jpg" alt="">
+                </div>
+                <h3>Fitz Roy</h3>
+                <p>Travel in the depths of the canyon on wide trails and narrow bridges with railings that lead to the Lower Falls and to the spectacular 30 metre-high Upper Falls. For a unique perspective, continue 265 m further to the viewpoint at the top of the upper falls. Beyond the falls, a trail continues up and over a forested ridge to a meadow where water bubbles from deep below the Earth’s surface into shallow pools called the Ink Pots.</p>
+                <a class="sa-button">Book a Trip</a>
+            </section>
+        </main>
+        <footer>
+            <span>Copyright <script type="text/javascript">document.write(new Date().getFullYear());</script></span>
+        </footer>
+    </body>
+</html>
