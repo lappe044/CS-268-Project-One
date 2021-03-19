@@ -115,20 +115,39 @@ ul {
   margin-top: 40px;
 }
 
-.guide_card {
+.brown_card,
+.green_card,
+.blue_card {
   box-sizing: border-box;
   width: 25%;
   height: 500px;
   text-align: center;
+  color: white;
 }
 
-.guide_card > p {
+.brown_card > p,
+.green_card > p,
+.blue_card > p {
   text-align: center;
 }
 
-.guide_card > img {
+.brown_card > img,
+.green_card > img,
+.blue_card > img {
   width: 100%;
   height: 350px;
+}
+
+.brown_card {
+  background-color: #3f3431;
+}
+
+.green_card {
+  background-color: #415d48;
+}
+
+.blue_card {
+  background-color: #05528e;
 }
 
 @media (max-width: 500px) {

@@ -108,11 +108,22 @@ p {
   height: 300px;
 }
 
-.b-button {
+.b-button,
+.antarctica-button,
+.oceania_button,
+.europe_button {
   padding: 0.5rem 2rem;
   margin-bottom: 10px;
-  background-color: #2d342e;
   color: #fbfbfb;
+}
+
+.antarctica-button,
+.europe_button {
+  background-color: #05528e;
+}
+
+.oceania_button {
+  background-color: #415d48;
 }
 
 @media (max-width: 500px) {
