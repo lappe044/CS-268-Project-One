@@ -1,0 +1,338 @@
+/**mobile styling*/
+*{
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    background-color: #fbfbfb;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+h1 {
+    font-size: 3rem;
+    padding: 1rem 0;
+    text-align: center;
+    color: #BCABAE;
+    padding-left: 1rem;
+}
+main {
+    padding: 0;
+    margin:0;
+}
+img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.about {
+    padding-bottom: 0;
+    font-size: 1rem;
+}
+section {
+    text-align: center;
+    position: relative;
+    padding-bottom: 2rem;
+}
+section > p {
+    padding: 0 3rem 1rem 3rem;
+    text-align: left;
+}
+section > h3 {
+    padding: 0 3rem;
+    text-align: left;
+}
+header nav {
+    background-color: #2d2e2e;
+    position: absolute;
+    right: -100%;
+    top: 4.75rem;
+}
+header nav a {
+    display: block;
+    color: #fbfbfb;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    width: 5rem;
+}
+nav a:hover {
+    color: #BCABAE;
+    text-decoration: underline;
+}
+header { 
+    position: fixed;
+    background-color: #2d2e2e85;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+header .show {
+    right: 0;
+}
+.hamburger {
+    width: 40px;
+    position: absolute;
+    right: 5px;
+    align-content: center;
+    padding-top:1rem;
+}
+a {
+    text-decoration: none;
+}
+/** formatting of trip options button*/
+.trip {
+    text-decoration: none;
+    align-content: center;
+    text-align: center;
+    background-color: #fbfbfb;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+/** flex item colors on home start*/
+#founder {
+    background-color: #2d342e;   
+}
+#north-america {
+    background-color: aqua;
+}
+#south-america {
+    background-color: aquamarine;
+}
+#africa {
+    background-color: darkgreen;
+}
+#asia {
+    background-color: slategray;
+}
+#europe {
+    background-color: salmon;
+}
+#oceania{
+    background-color: lavenderblush;
+}
+#antartica {
+    background-color: rosybrown;
+}
+/** flex item colors end */
+.main-text-overlay, .text-overlay, .text-overlay-2 {
+    position:absolute;
+    font-size: 1.25rem;
+    top: 10rem;
+    color: #fbfbfb;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 3px #00000070;
+}
+.main-text-overlay {
+    font-size: 2rem;  
+    text-align: center;
+}
+/**formating of buttons in individual pages*/
+.sa-button, .as-button, .af-button, .na-button {
+    color: #fbfbfb;
+    padding: 0.5rem 2rem;
+}
+.sa-button {
+    background-color: black;
+    
+}
+.as-button {
+    background-color: #442e2e;
+    
+}
+.na-button {
+    background-color: blue;
+   
+}
+.af-button {
+    background-color: #2d2e38;
+
+}
+/**end formating of buttons*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    align-content: center;
+}
+.gallery > img {
+    padding-top: 1rem;
+    width: 33.33%;
+}
+footer {
+    background-color: #2d2e2e;
+    color: #fbfbfb;
+    padding: 1rem;
+}
+/**contact page formating*/
+.swiss{
+    background: url(images/switzerland.jpg) no-repeat top center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.external{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+.contact_us{
+    max-width: 550px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 25px;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+.input_field{
+    display: flex;
+    flex-direction: column;
+    margin: 4%;
+}
+.input_field, message_area{
+    width: 48%;
+}
+
+.input_field .input, 
+.message_area textarea{
+    margin: 10px 0;
+    background: transparent;
+    border:0;
+    border-bottom: 2px solid rgb(187, 180, 180);
+    padding: 10px;
+    color: #c5ecfd;
+}
+
+.message_area
+    textarea{
+        height:212px;
+    }
+
+::-webkit-input-placeholder{
+    color: #c5ecfd;
+}
+::-moz-input-placeholder{
+    color: #c5ecfd;
+}
+::ms-input-placeholder{
+    color: #c5ecfd;
+}
+
+.btn{
+    background: #2e8db6;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+.title{
+    color: #fff;
+}
+/**end contact page formatting*/
+
+/***desktop styling*/
+@media (min-width: 1000px) {
+    .top {
+        position: relative;
+        height: 10rem;
+       
+    }
+    h1 {
+        position: absolute;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+        top: 3rem;
+    }
+    .hamburger {
+        display: none;
+    }
+    header nav {
+        position: unset;
+        background-color: unset;
+        width: unset;    
+    }
+    header nav a {
+        border: none;
+        padding: 1.25rem;
+        margin-bottom: 0;
+        display: inline-block;
+    }
+    header {
+        position: sticky;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        position: sticky;
+        justify-content: space-evenly;
+        width:100%;
+        background-color: #2d2e2e;
+        opacity: 0.95;
+    }
+    .about {
+        margin: auto;
+        padding: 5rem 0 4rem 0;
+    }
+    .all {
+        padding-bottom: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      
+                   
+    }
+    .content_card{
+        box-sizing: border-box;
+        max-width: 25%;
+        margin-bottom: 0;
+        position: relative;
+        height: 70rem;
+        margin-top: 5px;
+                
+    }
+   
+    .main-text-overlay, .text-overlay {
+        font-size: 3.25rem;
+        top: 30rem;
+        color: #fbfbfb;
+        left: 50%; 
+        transform: translate(-50%, -50%);
+    }
+    section > h3, section > p {
+        padding: 0 15rem;
+    }
+    section, section > p {
+        margin-bottom: 3rem;
+    }
+    #africa > p, #africa > h3, #south-america > p, #south-america > h3, #north-america > p, #north-america > h3, #europe > p, #europe > h3, 
+    #oceania > p, #oceania > h3, #asia > p, #asia > h3, #antartica > p, #antartica > h3, #founder > p, #founder > h3 {
+        padding: 0 3rem;
+    }
+    section > a {
+        margin-bottom: 2rem;
+    }
+    .content_card > img {
+        width: 100%;
+        height: 65%;
+    }
+    .text-overlay-2 {
+        top: 10rem;
+        font-size: 2rem;
+        color: #fbfbfb;
+    }
+    section > h3 {
+        padding-top:3rem;
+    }
+   
+}
