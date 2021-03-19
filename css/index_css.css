@@ -94,11 +94,36 @@ p {
   margin-top: 40px;
 }
 
-.content_card {
+.content_card,
+#antarctica_card,
+#oceania_card,
+#africa_card,
+#founder_card,
+#south_card,
+#north_card,
+#europe_card,
+#asia_card {
   box-sizing: border-box;
   width: 25%;
-  height: 500px;
+  height: 700px;
   text-align: center;
+}
+
+#antarctica_card,
+#europe_card {
+  background-color: #05528e;
+}
+
+#oceania_card,
+#north_card {
+  background-color: #415d48;
+}
+
+#africa_card,
+#founder_card,
+#south_card,
+#asia_card {
+  background-color: #3f3431;
 }
 
 .image_container {
@@ -117,6 +142,11 @@ p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.card_content {
+  display: flex;
+  flex-direction: column;
 }
 
 .button {
