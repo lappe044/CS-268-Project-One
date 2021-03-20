@@ -72,7 +72,6 @@ body {
 
 h3 {
   text-align: center;
-  margin: 20px;
 }
 
 p {
@@ -82,11 +81,15 @@ p {
   padding-right: 10%;
   padding-bottom: 20px;
   font-family: "Times New Roman", Times, serif;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul {
   text-align: center;
   list-style: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #threeImages {
@@ -162,4 +165,27 @@ ul {
   .guide_card {
     width: 50%;
   }
+}
+
+@media (max-width: 730px) {
+  #founder_pic {
+    height: 150px;
+  }
+  #title {
+    font-size: 50px;
+  }
+
+  #threeImages > img {
+    height: 200px;
+  }
+
+  .brown_card,
+  .green_card,
+  .blue_card {
+    width: 50%;
+    height: 500px;
+  }
+}
+
+@media (max-width: 430px) {
 }
