@@ -162,6 +162,32 @@ p {
   background-color: #2d342e;
 }
 
+#footer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram {
+  background: #2d2e2e;
+  color: white;
+}
+
 @media (max-width: 730px) {
   .text-overlay {
     font-size: 60px;
