@@ -2,7 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 #header,
@@ -21,7 +21,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 #navbar {
@@ -153,30 +153,16 @@ ul {
   background-color: #05528e;
 }
 
-@media (max-width: 500px) {
-  #founder_pic {
-    height: 150px;
-  }
-
-  #threeImages > img {
-    height: 100px;
-  }
-
-  .guide_card {
-    width: 50%;
-  }
-}
-
 @media (max-width: 730px) {
   #founder_pic {
-    height: 150px;
+    height: 200px;
   }
   #title {
     font-size: 50px;
   }
 
   #threeImages > img {
-    height: 200px;
+    height: 150px;
   }
 
   .brown_card,
@@ -188,4 +174,28 @@ ul {
 }
 
 @media (max-width: 430px) {
+  #founder_pic {
+    height: 150px;
+  }
+  #title {
+    font-size: 45px;
+  }
+
+  #threeImages > img {
+    height: 125px;
+  }
+
+  .brown_card,
+  .green_card,
+  .blue_card {
+    width: 100%;
+    height: 450px;
+  }
+
+  .brown_card > img,
+  .green_card > img,
+  .blue_card > img {
+    width: 100%;
+    height: 300px;
+  }
 }

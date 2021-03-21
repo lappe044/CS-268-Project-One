@@ -2,7 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 #header,
@@ -21,7 +21,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 #navbar {
@@ -94,7 +94,6 @@ p {
   margin-top: 40px;
 }
 
-.content_card,
 #antarctica_card,
 #oceania_card,
 #africa_card,
@@ -144,9 +143,10 @@ p {
   transform: translate(-50%, -50%);
 }
 
-.card_content {
-  display: flex;
-  flex-direction: column;
+.text {
+  height: 250px;
+  font-size: 70%;
+  overflow: hidden;
 }
 
 .button {
@@ -162,8 +162,40 @@ p {
   background-color: #2d342e;
 }
 
-@media (max-width: 500px) {
-  .guide_card {
+@media (max-width: 730px) {
+  .text-overlay {
+    font-size: 60px;
+  }
+
+  .content_card,
+  #antarctica_card,
+  #oceania_card,
+  #africa_card,
+  #founder_card,
+  #south_card,
+  #north_card,
+  #europe_card,
+  #asia_card {
+    box-sizing: border-box;
     width: 50%;
+    height: 700px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 430px) {
+  .content_card,
+  #antarctica_card,
+  #oceania_card,
+  #africa_card,
+  #founder_card,
+  #south_card,
+  #north_card,
+  #europe_card,
+  #asia_card {
+    box-sizing: border-box;
+    width: 100%;
+    height: 700px;
+    text-align: center;
   }
 }
