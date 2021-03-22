@@ -28,6 +28,7 @@ body {
   /*
     *z-index sets navbar to the front 
     */
+
   z-index: 1;
   overflow: hidden;
   background-color: #2d2e2e;

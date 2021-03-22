@@ -26,8 +26,9 @@ body {
 
 #navbar {
   /*
-  *z-index sets navbar to the front 
-  */
+      *z-index sets navbar to the front 
+      */
+
   z-index: 1;
   overflow: hidden;
   background-color: #2d2e2e;
@@ -52,12 +53,6 @@ body {
   width: 10%;
 }
 
-.tour_sections {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 img {
   width: 100%;
   height: 600px;
@@ -78,11 +73,8 @@ img {
 }
 
 h3 {
-  position: relative;
-  text-align: left;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 20px;
+  text-align: center;
+  margin: 20px;
 }
 
 p {
@@ -91,40 +83,29 @@ p {
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 20px;
-  font-family: "Times New Roman", Times, serif;
 }
 
-.threeImages {
+#trip_sections {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-content: center;
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 40px;
 }
 
-.threeImages > img {
-  width: 33.33%;
-  height: 300px;
+.card {
+  box-sizing: border-box;
+  width: 25%;
+  height: 400px;
+  text-align: center;
+  color: white;
 }
 
-.b-button,
-.antarctica-button,
-.oceania_button,
-.europe_button {
-  padding: 0.5rem 2rem;
-  margin-bottom: 10px;
-  color: #fbfbfb;
-}
-
-.antarctica-button,
-.europe_button {
-  background-color: #05528e;
-}
-
-.oceania_button {
-  background-color: #415d48;
+.card > img {
+  width: 100%;
+  height: 100%;
 }
 
 #footer {
@@ -154,28 +135,23 @@ p {
 }
 
 @media (max-width: 730px) {
-  .threeImages > img {
-    height: 100px;
-  }
   .text-overlay {
     font-size: 60px;
-    padding: 0px;
+  }
+
+  .card {
+    box-sizing: border-box;
+    width: 50%;
+    height: 700px;
+    text-align: center;
   }
 }
 
 @media (max-width: 430px) {
-  .text-overlay {
-    font-size: 40px;
-    top: 10rem;
-    padding: 0px;
-  }
-
-  img {
-    height: 400px;
-  }
-
-  .threeImages > img {
-    height: 200px;
+  .card {
+    box-sizing: border-box;
     width: 100%;
+    height: 700px;
+    text-align: center;
   }
 }
