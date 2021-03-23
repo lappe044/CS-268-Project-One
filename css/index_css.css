@@ -195,6 +195,49 @@ p {
   color: white;
 }
 
+@media (min-width: 1000px) {
+  #top > img {
+    width: 100%;
+    height: 15rem;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+  }
+
+  h1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 3rem;
+  }
+  .hamburger {
+    display: none;
+  }
+  header nav {
+    position: unset;
+    background-color: unset;
+    width: unset;
+  }
+  header nav a {
+    border: none;
+    padding: 1.25rem;
+    margin-bottom: 0;
+    display: inline-block;
+  }
+  header {
+    position: sticky;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #2d2e2e;
+    opacity: 0.95;
+  }
+}
+
 @media (max-width: 730px) {
   .text-overlay {
     font-size: 60px;
