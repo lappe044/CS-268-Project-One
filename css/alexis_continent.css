@@ -63,10 +63,16 @@ img {
   height: 600px;
 }
 
-.mainPicture {
+.mainPicture,
+#mainPicture1 {
   position: relative;
   text-align: center;
 }
+
+.mainPicture > img {
+  margin-top: 30px;
+}
+
 .text-overlay {
   position: absolute;
   font-size: 100px;
@@ -114,7 +120,6 @@ p {
 .oceania_button,
 .europe_button {
   padding: 0.5rem 2rem;
-  margin-bottom: 10px;
   color: #fbfbfb;
 }
 
@@ -130,6 +135,7 @@ p {
 #footer {
   display: flex;
   flex-direction: row-reverse;
+  margin-top: 30px;
 }
 
 .fa {

@@ -122,8 +122,8 @@ ul {
 .green_card,
 .blue_card {
   box-sizing: border-box;
-  width: 25%;
   height: 500px;
+  width: 25%;
   text-align: center;
   color: white;
 }
