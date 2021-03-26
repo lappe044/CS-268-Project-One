@@ -10,56 +10,56 @@ body {
   background-color: #2d2e2e;
 }
 
+#top > img {
+  position: relative;
+  height: 10rem;
+}
+
 h1 {
   font-size: 3rem;
-  padding: 1rem 0;
   text-align: center;
   color: #bcabae;
-  padding-left: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 3rem;
 }
 
-#top > img {
-  width: 100%;
-  height: 15rem;
-  padding: 0px;
-  margin: 0px;
-  overflow: hidden;
-}
-
-#navbar {
+header nav {
   background-color: #2d2e2e;
   position: absolute;
   right: -100%;
   top: 4.75rem;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  width: 100%;
 }
-#navbar > a {
+header nav a {
   display: block;
   color: #fbfbfb;
   text-align: center;
   text-decoration: none;
   padding: 1rem;
   width: 5rem;
+  font-size: 17px;
 }
-#navbar > a:hover {
+nav a:hover {
   color: #bcabae;
   text-decoration: underline;
 }
-
-#navbar .show {
+header {
+  position: fixed;
+  background-color: #2d2e2e85;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+header .show {
   right: 0;
 }
-
 .hamburger {
   width: 40px;
   position: absolute;
   right: 5px;
   align-content: center;
   padding-top: 1rem;
-  color: black;
 }
 a {
   text-decoration: none;
@@ -205,49 +205,44 @@ p {
 
 @media (min-width: 1000px) {
   #top > img {
-    width: 100%;
+    position: relative;
     height: 15rem;
-    padding: 0px;
-    margin: 0px;
-    overflow: hidden;
   }
-
   h1 {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     top: 3rem;
+    font-size: 4rem;
   }
   .hamburger {
     display: none;
   }
-
-  #navbar {
-    /*
-    *z-index sets navbar to the front 
-    */
-    z-index: 1;
-    overflow: hidden;
-    background-color: #2d2e2e;
-    opacity: 0.9;
-    position: sticky;
-    position: -webkit-sticky;
-    top: 0px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: space-between;
+  header nav {
+    position: unset;
+    background-color: unset;
+    width: unset;
   }
-
-  #navbar a {
-    box-sizing: border-box;
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 20px 20px;
-    text-decoration: none;
+  header nav a {
+    border: none;
+    padding: 14px 16px;
+    margin-bottom: 0;
+    display: inline-block;
     font-size: 17px;
     width: 10%;
+  }
+  header {
+    position: sticky;
+    background-color: #2d2e2e;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #2d2e2e;
+    opacity: 0.95;
   }
 }
 
