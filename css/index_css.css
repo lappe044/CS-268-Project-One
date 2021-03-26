@@ -117,7 +117,7 @@ p {
 #asia_card {
   box-sizing: border-box;
   width: 25%;
-  height: 700px;
+  height: 500px;
   text-align: center;
 }
 
@@ -142,6 +142,7 @@ p {
   position: relative;
   text-align: center;
   color: white;
+  margin-bottom: 50px;
 }
 
 .image_container > img {
@@ -156,18 +157,9 @@ p {
   transform: translate(-50%, -50%);
 }
 
-.text {
-  height: 250px;
-  font-size: 85%;
-  overflow: hidden;
-  color: black;
-  margin-bottom: 2rem;
-}
-
 .button {
   text-decoration: none;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   text-align: center;
   background-color: #fbfbfb;
   padding: 0.5rem 1rem;
@@ -262,7 +254,6 @@ p {
   #asia_card {
     box-sizing: border-box;
     width: 50%;
-    height: 700px;
     text-align: center;
   }
   .text {
@@ -282,7 +273,6 @@ p {
   #asia_card {
     box-sizing: border-box;
     width: 100%;
-    height: 700px;
     text-align: center;
   }
 }
