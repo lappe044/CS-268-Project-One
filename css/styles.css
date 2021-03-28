@@ -7,17 +7,28 @@ body {
   background-color: #fbfbfb;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  font-size: 1rem;
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
 }
 h1 {
   font-size: 3rem;
   padding: 1rem 0;
   text-align: center;
   color: #bcabae;
-  padding-left: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 1rem;
+  
 }
 main {
   padding: 0;
   margin: 0;
+}
+#top {
+  background-color: white;
 }
 img {
   width: 100%;
@@ -33,6 +44,9 @@ section {
   text-align: center;
   position: relative;
   padding-bottom: 2rem;
+}
+.shrink {
+  height: 400px;
 }
 section > p {
   padding: 0 3rem 1rem 3rem;
@@ -81,46 +95,11 @@ header .show {
 a {
   text-decoration: none;
 }
-/** formatting of trip options button*/
-.trip {
-  text-decoration: none;
-  align-content: center;
-  text-align: center;
-  background-color: #fbfbfb;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-}
-/** flex item colors on home start*/
-#founder {
-  background-color: #2d342e;
-}
-#north-america {
-  background-color: aqua;
-}
-#south-america {
-  background-color: aquamarine;
-}
-#africa {
-  background-color: darkgreen;
-}
-#asia {
-  background-color: slategray;
-}
-#europe {
-  background-color: salmon;
-}
-#oceania {
-  background-color: lavenderblush;
-}
-#antartica {
-  background-color: rosybrown;
-}
-/** flex item colors end */
 .main-text-overlay,
 .text-overlay,
 .text-overlay-2 {
   position: absolute;
-  font-size: 1.25rem;
+  font-size: 2rem;
   top: 10rem;
   color: #fbfbfb;
   left: 50%;
@@ -130,6 +109,7 @@ a {
 .main-text-overlay {
   font-size: 2rem;
   text-align: center;
+  top: 20rem;
 }
 /**formating of buttons in individual pages*/
 .sa-button,
@@ -168,67 +148,46 @@ footer {
   color: #fbfbfb;
   padding: 1rem;
 }
-/**contact page formating*/
-.swiss {
-  background: url(images/switzerland.jpg) no-repeat top center;
-  background-size: cover;
-  height: 100vh;
+#contact-body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
 }
-
-.external {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: column;
+#contact-header {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: 3rem;
 }
-.contact_us {
-  max-width: 550px;
-  margin: 0 auto;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 30px;
-  border-radius: 25px;
-  display: flex;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+label {
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem 0 0.25rem;
 }
-.input_field {
-  display: flex;
-  flex-direction: column;
-  margin: 4%;
+form {
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0.6);
+    padding: 2rem;
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.8);
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
 }
-.input_field,
-message_area {
-  width: 48%;
-}
-
-.input_field .input,
-.message_area textarea {
+input[type=text], input[type=email], input[type=date], input[type=number] {
   margin: 10px 0;
   background: transparent;
-  border: 0;
+  border:0;
   border-bottom: 2px solid rgb(187, 180, 180);
   padding: 10px;
+  width: 18rem;
   color: #c5ecfd;
 }
 
-.message_area textarea {
-  height: 212px;
-}
 
-::-webkit-input-placeholder {
-  color: #c5ecfd;
-}
-::-moz-input-placeholder {
-  color: #c5ecfd;
-}
-::ms-input-placeholder {
-  color: #c5ecfd;
-}
-
-.btn {
+.btn{
   background: #2e8db6;
   text-align: center;
   padding: 15px;
@@ -237,22 +196,77 @@ message_area {
   cursor: pointer;
   text-transform: uppercase;
 }
-.title {
-  color: #fff;
+.info{
+  display: flex;
+  flex-direction: column;
+  margin: 4%;
 }
-/**end contact page formatting*/
+
+.info .input, .message_area textarea{
+  margin: 10px 0;
+  background: transparent;
+  border:0;
+  width: 18rem;
+  border-bottom: 2px solid rgb(187, 180, 180);
+  padding: 10px;
+  color: #c5ecfd;
+}
+.message_area textarea{
+  height: 10rem;
+  margin: 4%;
+  padding: 0;
+}
+::-webkit-input-placeholder{
+  color: #c5ecfd;
+}
+::-moz-input-placeholder{
+  color: #c5ecfd;
+}
+::ms-input-placeholder{
+  color: #c5ecfd;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram {
+  background: #2d2e2e;
+  color: white;
+}
+
 
 /***desktop styling*/
 @media (min-width: 1000px) {
-  .top {
+  body {
+    font-size: 25px;
+  }
+  #top > img {
     position: relative;
-    height: 10rem;
+    height: 15rem;
   }
   h1 {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     top: 3rem;
+    font-size: 4rem;
   }
   .hamburger {
     display: none;
@@ -264,12 +278,15 @@ message_area {
   }
   header nav a {
     border: none;
-    padding: 1.25rem;
+    padding: 14px 16px;
     margin-bottom: 0;
     display: inline-block;
+    font-size: 17px;
+    width: 10%;
   }
   header {
     position: sticky;
+    background-color: #2d2e2e;
   }
   nav {
     display: flex;
@@ -283,6 +300,7 @@ message_area {
   .about {
     margin: auto;
     padding: 5rem 0 4rem 0;
+    font-size: 25px;
   }
   .all {
     padding-bottom: 0;
@@ -290,22 +308,20 @@ message_area {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .content_card {
-    box-sizing: border-box;
-    max-width: 25%;
-    margin-bottom: 0;
-    position: relative;
-    height: 70rem;
-    margin-top: 5px;
+  .shrink {
+    height: 30%;
+    max-height: 700px;
   }
-
   .main-text-overlay,
   .text-overlay {
     font-size: 3.25rem;
-    top: 30rem;
+    top: 35rem;
     color: #fbfbfb;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  .text-overlay {
+    top: 20rem;
   }
   section > h3,
   section > p {
@@ -315,37 +331,56 @@ message_area {
   section > p {
     margin-bottom: 3rem;
   }
-  #africa > p,
-  #africa > h3,
-  #south-america > p,
-  #south-america > h3,
-  #north-america > p,
-  #north-america > h3,
-  #europe > p,
-  #europe > h3,
-  #oceania > p,
-  #oceania > h3,
-  #asia > p,
-  #asia > h3,
-  #antartica > p,
-  #antartica > h3,
-  #founder > p,
-  #founder > h3 {
-    padding: 0 3rem;
-  }
+  
   section > a {
     margin-bottom: 2rem;
   }
-  .content_card > img {
-    width: 100%;
-    height: 65%;
-  }
-  .text-overlay-2 {
-    top: 10rem;
-    font-size: 2rem;
-    color: #fbfbfb;
-  }
+
   section > h3 {
     padding-top: 3rem;
   }
+  form {
+    width: 50rem;
+  }
+  footer > a{
+    height: 50px;
+  }
+  .info {
+    flex-direction: row;
+    max-width: 48rem;
+    flex-wrap: wrap;
+  }
+  .input {
+    margin: 1rem;
+  }
+  .row1, .row2, .col1, .col2 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+  }
+  .col1, .col2 {
+    flex-direction: column;
+    width:50%;
+  }
+  
+  .input {
+    margin-right: 2%;
+  }
+  fieldset {
+    max-width: 18rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+   
+  }
+  fieldset > label {
+    padding: 0.25rem;
+  }
+  .message_area textarea{
+    width: 100%;
+    max-width: 42rem;
+  }
+
 }

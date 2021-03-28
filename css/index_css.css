@@ -22,7 +22,7 @@ h1 {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 3rem;
+  top: 1rem;
 }
 
 header nav {
@@ -56,10 +56,12 @@ header .show {
 }
 .hamburger {
   width: 40px;
+  height: 3rem;
   position: absolute;
   right: 5px;
   align-content: center;
-  padding-top: 1rem;
+  margin-top: 0.5rem;
+  
 }
 a {
   text-decoration: none;
