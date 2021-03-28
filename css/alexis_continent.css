@@ -61,7 +61,6 @@ header .show {
   right: 5px;
   align-content: center;
   margin-top: 0.5rem;
-  
 }
 a {
   text-decoration: none;
@@ -100,18 +99,23 @@ img {
 h3 {
   position: relative;
   text-align: left;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 0 15rem;
   padding-top: 20px;
 }
 
-p {
+p,
+.special {
   position: relative;
   text-align: left;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 0 15rem;
   padding-bottom: 20px;
   font-family: "Times New Roman", Times, serif;
+}
+
+.special {
+  margin: auto;
+  padding: 5rem 15rem 5rem 15rem;
+  font-size: 25px;
 }
 
 .threeImages {
@@ -178,7 +182,6 @@ p {
     height: 100px;
   }
   .text-overlay {
-  
     padding: 0px;
   }
 }
@@ -247,6 +250,6 @@ p {
     max-height: 700px;
   }
   .text-overlay {
-    font-size: 3.25rem;
+    font-size: 5rem;
   }
 }

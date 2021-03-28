@@ -9,8 +9,8 @@ body {
   margin: 0;
   font-size: 1rem;
 }
-p{
-    font-family: 'Times New Roman', Times, serif;
+p {
+  font-family: "Times New Roman", Times, serif;
 }
 h1 {
   font-size: 3rem;
@@ -21,7 +21,6 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
   top: 1rem;
-  
 }
 main {
   padding: 0;
@@ -120,16 +119,16 @@ a {
   padding: 0.5rem 2rem;
 }
 .sa-button {
-  background-color: black;
+  background-color: #3f3431;
 }
 .as-button {
-  background-color: #442e2e;
+  background-color: #3f3431;
 }
 .na-button {
-  background-color: blue;
+  background-color: #415d48;
 }
 .af-button {
-  background-color: #2d2e38;
+  background-color: #3f3431;
 }
 /**end formating of buttons*/
 .gallery {
@@ -149,45 +148,47 @@ footer {
   padding: 1rem;
 }
 #contact-body {
-    margin: 0;
-    padding: 0;
-    color: #fff;
+  margin: 0;
+  padding: 0;
+  color: #fff;
 }
 #contact-header {
-    margin: 0;
-    padding: 1rem;
-    text-align: center;
-    font-size: 3rem;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
 }
 label {
-    display: block;
-    font-size: 1.5rem;
-    margin: 1rem 0 0.25rem;
+  display: block;
+  font-size: 1.5rem;
+  margin: 1rem 0 0.25rem;
 }
 form {
-    box-sizing: border-box;
-    background-color: rgba(0,0,0,0.6);
-    padding: 2rem;
-    width: 24rem;
-    display: flex;
-    flex-direction: column;
-    border-radius: 25px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.8);
-    margin: auto;
-    font-family: 'Times New Roman', Times, serif;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
 }
-input[type=text], input[type=email], input[type=date], input[type=number] {
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"] {
   margin: 10px 0;
   background: transparent;
-  border:0;
+  border: 0;
   border-bottom: 2px solid rgb(187, 180, 180);
   padding: 10px;
   width: 18rem;
   color: #c5ecfd;
 }
 
-
-.btn{
+.btn {
   background: #2e8db6;
   text-align: center;
   padding: 15px;
@@ -196,33 +197,34 @@ input[type=text], input[type=email], input[type=date], input[type=number] {
   cursor: pointer;
   text-transform: uppercase;
 }
-.info{
+.info {
   display: flex;
   flex-direction: column;
   margin: 4%;
 }
 
-.info .input, .message_area textarea{
+.info .input,
+.message_area textarea {
   margin: 10px 0;
   background: transparent;
-  border:0;
+  border: 0;
   width: 18rem;
   border-bottom: 2px solid rgb(187, 180, 180);
   padding: 10px;
   color: #c5ecfd;
 }
-.message_area textarea{
+.message_area textarea {
   height: 10rem;
   margin: 4%;
   padding: 0;
 }
-::-webkit-input-placeholder{
+::-webkit-input-placeholder {
   color: #c5ecfd;
 }
-::-moz-input-placeholder{
+::-moz-input-placeholder {
   color: #c5ecfd;
 }
-::ms-input-placeholder{
+::ms-input-placeholder {
   color: #c5ecfd;
 }
 
@@ -250,7 +252,6 @@ footer {
   background: #2d2e2e;
   color: white;
 }
-
 
 /***desktop styling*/
 @media (min-width: 1000px) {
@@ -314,7 +315,7 @@ footer {
   }
   .main-text-overlay,
   .text-overlay {
-    font-size: 3.25rem;
+    font-size: 5rem;
     top: 35rem;
     color: #fbfbfb;
     left: 50%;
@@ -331,7 +332,7 @@ footer {
   section > p {
     margin-bottom: 3rem;
   }
-  
+
   section > a {
     margin-bottom: 2rem;
   }
@@ -342,7 +343,7 @@ footer {
   form {
     width: 50rem;
   }
-  footer > a{
+  footer > a {
     height: 50px;
   }
   .info {
@@ -353,18 +354,22 @@ footer {
   .input {
     margin: 1rem;
   }
-  .row1, .row2, .col1, .col2 {
+  .row1,
+  .row2,
+  .col1,
+  .col2 {
     display: flex;
     justify-content: space-between;
     width: 100%;
     margin: auto;
     padding: 1rem;
   }
-  .col1, .col2 {
+  .col1,
+  .col2 {
     flex-direction: column;
-    width:50%;
+    width: 50%;
   }
-  
+
   .input {
     margin-right: 2%;
   }
@@ -373,14 +378,12 @@ footer {
     display: flex;
     flex-wrap: wrap;
     text-align: left;
-   
   }
   fieldset > label {
     padding: 0.25rem;
   }
-  .message_area textarea{
+  .message_area textarea {
     width: 100%;
     max-width: 42rem;
   }
-
 }
