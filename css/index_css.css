@@ -176,7 +176,7 @@ p {
   flex-direction: row;
   color: white;
   margin: 5px 2px;
-  font-size: 30px;
+  font-size: 15px;
 }
 
 .right {
@@ -245,6 +245,10 @@ p {
     width: 100%;
     background-color: #2d2e2e;
     opacity: 0.95;
+  }
+
+  .left {
+    font-size: 30px;
   }
 }
 

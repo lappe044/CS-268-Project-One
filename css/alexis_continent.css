@@ -99,7 +99,7 @@ img {
 h3 {
   position: relative;
   text-align: left;
-  padding: 0 15rem;
+  padding: 0 3rem;
   padding-top: 20px;
 }
 
@@ -107,15 +107,14 @@ p,
 .special {
   position: relative;
   text-align: left;
-  padding: 0 15rem;
+  padding: 0 3rem 1rem 3rem;
   padding-bottom: 20px;
   font-family: "Times New Roman", Times, serif;
 }
 
 .special {
   margin: auto;
-  padding: 5rem 15rem 5rem 15rem;
-  font-size: 25px;
+  padding: 3rem 3rem 1rem 3rem;
 }
 
 .threeImages {
@@ -152,8 +151,21 @@ p,
 
 #footer {
   display: flex;
+  justify-content: space-between;
+  height: 50px;
+  background-color: #2d2e2e;
+}
+
+.left {
+  flex-direction: row;
+  color: white;
+  margin: 5px 2px;
+  font-size: 15px;
+}
+
+.right {
   flex-direction: row-reverse;
-  margin-top: 30px;
+  justify-content: right;
 }
 
 .fa {
@@ -186,21 +198,6 @@ p,
   }
 }
 
-@media (max-width: 430px) {
-  .text-overlay {
-    top: 10rem;
-    padding: 0px;
-  }
-
-  img {
-    height: 400px;
-  }
-
-  .threeImages > img {
-    height: 200px;
-    width: 100%;
-  }
-}
 @media (min-width: 1000px) {
   body {
     font-size: 25px;
@@ -251,5 +248,31 @@ p,
   }
   .text-overlay {
     font-size: 5rem;
+  }
+
+  h3 {
+    position: relative;
+    text-align: left;
+    padding: 0 15rem;
+    padding-top: 20px;
+  }
+
+  p,
+  .special {
+    position: relative;
+    text-align: left;
+    padding: 0 15rem;
+    padding-bottom: 20px;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .special {
+    margin: auto;
+    padding: 5rem 15rem 5rem 15rem;
+    font-size: 25px;
+  }
+
+  .left {
+    font-size: 30px;
   }
 }
