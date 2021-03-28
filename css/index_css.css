@@ -167,9 +167,21 @@ p {
 
 #footer {
   display: flex;
-  flex-direction: row-reverse;
+  justify-content: space-between;
   height: 50px;
   background-color: #2d2e2e;
+}
+
+.left {
+  flex-direction: row;
+  color: white;
+  margin: 5px 2px;
+  font-size: 30px;
+}
+
+.right {
+  flex-direction: row-reverse;
+  justify-content: right;
 }
 
 .fa {
