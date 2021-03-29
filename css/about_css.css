@@ -7,7 +7,8 @@ body {
 
 #top > img {
   position: relative;
-  height: 10rem;
+  height: 15rem;
+  border-bottom: 10px solid #2d2e2e;
 }
 
 h1 {
@@ -70,8 +71,8 @@ a {
 
 #founder_pic {
   border-radius: 50%;
-  width: 50%;
-  height: 300px;
+  width: 55%;
+  height: 200px;
 }
 
 #title {
@@ -131,7 +132,7 @@ ul {
 .blue_card {
   box-sizing: border-box;
   height: 500px;
-  width: 25%;
+  width: 50%;
   text-align: center;
   color: white;
 }
@@ -172,7 +173,7 @@ ul {
   flex-direction: row;
   color: white;
   margin: 5px 2px;
-  font-size: 30px;
+  font-size: 15px;
 }
 
 .right {
@@ -201,26 +202,6 @@ ul {
   color: white;
 }
 
-@media (max-width: 730px) {
-  #founder_pic {
-    height: 200px;
-  }
-  #title {
-    font-size: 50px;
-  }
-
-  #threeImages > img {
-    height: 150px;
-  }
-
-  .brown_card,
-  .green_card,
-  .blue_card {
-    width: 50%;
-    height: 500px;
-  }
-}
-
 @media (max-width: 430px) {
   #founder_pic {
     height: 150px;
@@ -244,7 +225,7 @@ ul {
   .green_card > img,
   .blue_card > img {
     width: 100%;
-    height: 300px;
+    height: 200px;
   }
 }
 @media (min-width: 1000px) {
@@ -252,6 +233,7 @@ ul {
     position: relative;
     height: 15rem;
     width: 100%;
+    border: none;
   }
   h1 {
     position: absolute;
@@ -288,5 +270,28 @@ ul {
     width: 100%;
     background-color: #2d2e2e;
     opacity: 0.95;
+  }
+
+  #founder_pic {
+    border-radius: 50%;
+    width: 50%;
+    height: 300px;
+  }
+
+  .brown_card,
+  .green_card,
+  .blue_card {
+    height: 500px;
+    width: 25%;
+  }
+
+  .brown_card > img,
+  .green_card > img,
+  .blue_card > img {
+    height: 350px;
+  }
+
+  .left {
+    font-size: 30px;
   }
 }
