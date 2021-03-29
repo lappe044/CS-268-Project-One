@@ -142,11 +142,7 @@ a {
   padding-top: 1rem;
   width: 33.33%;
 }
-footer {
-  background-color: #2d2e2e;
-  color: #fbfbfb;
-  padding: 1rem;
-}
+/** contact page */
 #contact-body {
   margin: 0;
   padding: 0;
@@ -227,6 +223,26 @@ input[type="number"] {
 ::ms-input-placeholder {
   color: #c5ecfd;
 }
+/***end contact format */
+/**footer */
+#footer {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  background-color: #2d2e2e;
+}
+
+.left {
+  flex-direction: row;
+  color: white;
+  margin: 5px 2px;
+  font-size: 15px;
+}
+
+.right {
+  flex-direction: row-reverse;
+  justify-content: right;
+}
 
 .fa {
   padding: 10px;
@@ -238,10 +254,6 @@ input[type="number"] {
   margin: 5px 2px;
 }
 
-footer {
-  display: flex;
-  flex-direction: row-reverse;
-}
 .fa:hover {
   opacity: 0.7;
 }
@@ -385,5 +397,8 @@ footer {
   .message_area textarea {
     width: 100%;
     max-width: 42rem;
+  }
+  .left {
+    font-size: 30px;
   }
 }
