@@ -154,6 +154,7 @@ p,
   justify-content: space-between;
   height: 50px;
   background-color: #2d2e2e;
+  margin-top: 50px;
 }
 
 .left {
@@ -248,6 +249,7 @@ p,
   }
   .text-overlay {
     font-size: 5rem;
+    top: 19rem;
   }
 
   h3 {
