@@ -112,10 +112,10 @@ p {
 #europe_card,
 #asia_card {
   box-sizing: border-box;
-  width: 24.5%;
+  width: 24.6%;
   height: 500px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 0.5%;
 }
 
 #south_card,
@@ -141,7 +141,7 @@ p {
 #south_card,
 #north_card,
 #europe_card {
-  margin-right: 10px;
+  margin-right: 0.5%;
 }
 
 .image_container {
@@ -278,8 +278,15 @@ p {
   #europe_card,
   #asia_card {
     box-sizing: border-box;
-    width: 50%;
+    width: 49.7%;
     text-align: center;
+  }
+
+  #north_card,
+  #asia_card,
+  #oceania_card,
+  #about_card {
+    margin-right: 0px;
   }
   .text {
     font-size: 50%;

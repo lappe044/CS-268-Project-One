@@ -135,17 +135,22 @@ ul {
   width: 48%;
   text-align: center;
   color: white;
-  margin-top: 10px;
+  margin-top: 0.5%;
 }
 
 #aaron,
-#nadia,
 #kristin,
 #kim,
-#luke,
 #ryan {
   box-sizing: border-box;
-  margin-right: 10px;
+  margin-right: 0.5%;
+}
+
+#nadia,
+#kim,
+#ryan {
+  box-sizing: border-box;
+  margin-right: 0px;
 }
 
 .brown_card > p,
@@ -297,7 +302,14 @@ ul {
   .green_card,
   .blue_card {
     height: 500px;
-    width: 24.5%;
+    width: 24.6%;
+  }
+
+  #nadia,
+  #kim,
+  #ryan {
+    box-sizing: border-box;
+    margin-right: 0.5%;
   }
 
   .brown_card > img,
