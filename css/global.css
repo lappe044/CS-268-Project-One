@@ -1,0 +1,230 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+#top > img {
+  position: relative;
+  height: 10rem;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #bcabae;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 1rem;
+}
+
+header nav {
+  background-color: #2d2e2e;
+  position: absolute;
+  right: -100%;
+  top: 4.75rem;
+}
+
+header nav a {
+  display: block;
+  color: #fbfbfb;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem;
+  width: 5rem;
+  font-size: 17px;
+}
+
+nav a:hover {
+  color: #bcabae;
+  text-decoration: underline;
+}
+
+header {
+  position: fixed;
+  background-color: #2d2e2e85;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+header .show {
+  right: 0;
+}
+
+.hamburger {
+  width: 40px;
+  height: 3rem;
+  position: absolute;
+  right: 5px;
+  align-content: center;
+  margin-top: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mainPicture {
+  position: relative;
+  text-align: center;
+}
+
+.text-overlay {
+  position: absolute;
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 3px #00000070;
+  top: 15rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.brown_card,
+.green_card,
+.blue_card,
+.brown2_card {
+  box-sizing: border-box;
+  width: 24.6%;
+  height: 500px;
+  text-align: center;
+  margin-top: 0.5%;
+}
+
+.brown_card,
+.brown2_card {
+  background-color: #3f3431;
+}
+
+.blue_card {
+  background-color: #05528e;
+}
+
+.green_card {
+  background-color: #415d48;
+}
+
+.brown_card,
+.blue_card,
+.green_card {
+  margin-right: 0.5%;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  background-color: #2d2e2e;
+  margin-top: 0.5%;
+}
+
+.left {
+  flex-direction: row;
+  color: white;
+  margin: 5px 2px;
+  font-size: 15px;
+}
+
+.right {
+  flex-direction: row-reverse;
+  justify-content: right;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram {
+  background: #2d2e2e;
+  color: white;
+}
+
+@media (min-width: 1000px) {
+  #top > img {
+    position: relative;
+    height: 15rem;
+  }
+
+  h1 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 3rem;
+    font-size: 4rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+  header nav {
+    position: unset;
+    background-color: unset;
+    width: unset;
+  }
+  header nav a {
+    border: none;
+    padding: 14px 16px;
+    margin-bottom: 0;
+    display: inline-block;
+    font-size: 17px;
+    width: 10%;
+  }
+  header {
+    position: sticky;
+    background-color: #2d2e2e;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #2d2e2e;
+    opacity: 0.95;
+  }
+
+  .left {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 730px) {
+  .brown_card,
+  .green_card,
+  .blue_card,
+  .brown2_card {
+    box-sizing: border-box;
+    width: 49.7%;
+    text-align: center;
+  }
+
+  .green_card,
+  .brown2_card {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 430px) {
+  .brown_card,
+  .blue_card,
+  .green_card,
+  .brown_card {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+  }
+}
