@@ -267,6 +267,11 @@ input[type="number"] {
 }
 
 /***desktop styling*/
+@media(min-width: 700px) {
+  .main-text-overlay {
+    top: 20rem;
+  }
+}
 @media (min-width: 1000px) {
   body {
     font-size: 25px;
@@ -323,8 +328,7 @@ input[type="number"] {
     flex-wrap: wrap;
   }
   .shrink {
-    height: 30%;
-    max-height: 700px;
+    height: 700px;
   }
   .main-text-overlay,
   .text-overlay {
