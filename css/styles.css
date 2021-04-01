@@ -108,7 +108,8 @@ a {
 .main-text-overlay {
   font-size: 2rem;
   text-align: center;
-  top: 20rem;
+  top: 15rem;
+ 
 }
 /**formating of buttons in individual pages*/
 .sa-button,
