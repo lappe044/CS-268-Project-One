@@ -1,6 +1,6 @@
 img {
   width: 100%;
-  height: 600px;
+  height: 400px;
 }
 
 h3 {
@@ -64,5 +64,11 @@ p {
 
   .text {
     font-size: 50%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #mainPicture2 > .text-overlay {
+    top: 35rem;
   }
 }
