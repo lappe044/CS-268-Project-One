@@ -67,8 +67,14 @@ p {
   }
 }
 
-@media (max-width: 1000px) {
-  #mainPicture2 > .text-overlay {
-    top: 35rem;
+@media (min-width: 1000px) {
+  .text-overlay {
+    top: 20rem;
+  }
+  img {
+    height: 700px;
+  }
+  .text-overlay {
+    font-size: 4rem;
   }
 }
