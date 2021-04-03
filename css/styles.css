@@ -1,13 +1,13 @@
 /**mobile styling*/
 * {
-  box-sizing: border-box;
+  
   outline: none;
 }
 body {
   background-color: #fbfbfb;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  font-size: 1rem;
+  font-size: 25px;
 }
 p {
   font-family: "Times New Roman", Times, serif;
@@ -29,6 +29,10 @@ main {
 #top {
   background-color: white;
 }
+#top > img {
+  position: relative;
+  height: 10rem;
+}
 img {
   width: 100%;
   margin: 0;
@@ -37,7 +41,7 @@ img {
 }
 .about {
   padding-bottom: 0;
-  font-size: 1rem;
+  font-size: 25px;
 }
 section {
   text-align: center;
@@ -68,6 +72,7 @@ header nav a {
   text-decoration: none;
   padding: 1rem;
   width: 5rem;
+  font-size: 17px;
 }
 nav a:hover {
   color: #bcabae;
@@ -85,11 +90,11 @@ header .show {
 }
 .hamburger {
   width: 40px;
+  height: 3rem;
   position: absolute;
   right: 5px;
   align-content: center;
-  padding-top: 1rem;
-  color: black;
+  margin-top: 0.5rem;
 }
 a {
   text-decoration: none;
@@ -98,7 +103,7 @@ a {
 .text-overlay,
 .text-overlay-2 {
   position: absolute;
-  font-size: 2rem;
+  font-size: 3rem;
   top: 10rem;
   color: #fbfbfb;
   left: 50%;
@@ -106,9 +111,8 @@ a {
   text-shadow: 2px 2px 3px #00000070;
 }
 .main-text-overlay {
-  font-size: 2rem;
   text-align: center;
-  top: 15rem;
+  top: 19rem;
  
 }
 /**formating of buttons in individual pages*/
@@ -267,11 +271,6 @@ input[type="number"] {
 }
 
 /***desktop styling*/
-@media(min-width: 700px) {
-  .main-text-overlay {
-    top: 20rem;
-  }
-}
 @media (min-width: 1000px) {
   body {
     font-size: 25px;
@@ -375,6 +374,7 @@ input[type="number"] {
   .row2,
   .col1,
   .col2 {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     width: 100%;
