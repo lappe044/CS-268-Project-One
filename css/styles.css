@@ -29,18 +29,10 @@ main {
 #top {
   background-color: white;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 4025e51d37ee0ed59c94fb472214288f74665aa1
 #top > img {
   position: relative;
   height: 10rem;
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 4025e51d37ee0ed59c94fb472214288f74665aa1
 img {
   width: 100%;
   margin: 0;
@@ -48,11 +40,7 @@ img {
   overflow: hidden;
 }
 .about {
-<<<<<<< HEAD
   padding-bottom: 0;
-=======
-  padding-top: 3rem;
->>>>>>> 4025e51d37ee0ed59c94fb472214288f74665aa1
   font-size: 25px;
 }
 section {
@@ -84,10 +72,7 @@ header nav a {
   text-align: center;
   text-decoration: none;
   padding: 1rem;
-<<<<<<< HEAD
   width: 5rem;
-=======
->>>>>>> 4025e51d37ee0ed59c94fb472214288f74665aa1
   font-size: 17px;
 }
 
@@ -129,12 +114,8 @@ a {
 }
 .main-text-overlay {
   text-align: center;
-<<<<<<< HEAD
   top: 19rem;
  
-=======
-  top: 20rem;
->>>>>>> 4025e51d37ee0ed59c94fb472214288f74665aa1
 }
 /**formating of buttons in individual pages*/
 .sa-button,
@@ -295,14 +276,6 @@ input[type="number"] {
 }
 
 /***desktop styling*/
-<<<<<<< HEAD
-=======
-@media (min-width: 700px) {
-  .main-text-overlay {
-    top: 20rem;
-  }
-}
->>>>>>> 4025e51d37ee0ed59c94fb472214288f74665aa1
 @media (min-width: 1000px) {
   body {
     font-size: 25px;
