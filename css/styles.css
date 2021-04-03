@@ -7,7 +7,7 @@ body {
   background-color: #fbfbfb;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
-  font-size: 1rem;
+  font-size: 25px;
 }
 p {
   font-family: "Times New Roman", Times, serif;
@@ -29,6 +29,12 @@ main {
 #top {
   background-color: white;
 }
+
+#top > img {
+  position: relative;
+  height: 10rem;
+}
+
 img {
   width: 100%;
   margin: 0;
@@ -36,13 +42,13 @@ img {
   overflow: hidden;
 }
 .about {
-  padding-bottom: 0;
-  font-size: 1rem;
+  padding-top: 3rem;
+  font-size: 25px;
 }
 section {
   text-align: center;
   position: relative;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
 .shrink {
   height: 400px;
@@ -54,6 +60,7 @@ section > p {
 section > h3 {
   padding: 0 3rem;
   text-align: left;
+  padding-top: 3rem;
 }
 header nav {
   background-color: #2d2e2e;
@@ -67,8 +74,9 @@ header nav a {
   text-align: center;
   text-decoration: none;
   padding: 1rem;
-  width: 5rem;
+  font-size: 17px;
 }
+
 nav a:hover {
   color: #bcabae;
   text-decoration: underline;
@@ -108,8 +116,7 @@ a {
 .main-text-overlay {
   font-size: 2rem;
   text-align: center;
-  top: 15rem;
- 
+  top: 20rem;
 }
 /**formating of buttons in individual pages*/
 .sa-button,
@@ -214,7 +221,9 @@ input[type="number"] {
   height: 10rem;
   margin: 4%;
   padding: 0;
+  color: #c5ecfd;
 }
+
 ::-webkit-input-placeholder {
   color: #c5ecfd;
 }
@@ -224,6 +233,7 @@ input[type="number"] {
 ::ms-input-placeholder {
   color: #c5ecfd;
 }
+
 /***end contact format */
 /**footer */
 #footer {
@@ -267,7 +277,7 @@ input[type="number"] {
 }
 
 /***desktop styling*/
-@media(min-width: 700px) {
+@media (min-width: 700px) {
   .main-text-overlay {
     top: 20rem;
   }
