@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Login</title>
+
+    <style>
+        #container{
+            background-image: url("images/switzerland.jpg");
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            
+        }
+        </style>
+</head>
+<body>
+
+    <div id="top">
+        <img src="images/logo1.png" alt="drawn picture of a mountain range">
+    </div>
+    <a href="index.html"><h1>Epic MT</h1></a>
+    <header>
+        <div onclick="toggleNav()"><img class="hamburger" src="images/download.png" alt="navigational hamburger"></div>
+        <nav class="toggle-nav">
+            <a href = "index.html">Home</a>
+            <a href ="africa.html">Africa</a>
+            <a href="north-america.html">North America</a>
+            <a href="south-america.html">South America</a>
+            <a href ="europe.html">Europe</a>
+            <a href="asia.html">Asia</a>
+            <a href="oceania.html">Oceania</a>
+            <a href="antarctica.html">Antarctica</a>
+            <a href="about.html">About</a>
+            <a href="contact-us.html">Contact</a>
+        </nav>
+    </header>
+  
+
+
+        
+
+        <div id = "container">
+            
+            <form action="login.php" method="post">
+
+            <h3>Epic MT</h3>
+
+            <input type="text" placeholder="Enter Username" name="username" id="username" required>
+            <input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+            <button type="submit">Login</button>
+
+            
+            <!----put into flexbox-->
+            <button type = "button" class="cancelbtn">Cancel</button>
+            <span class="psw">New <a href="create_account.html">user?</a></span>
+            </form>
+            
+              
+        </div> 
+          
+        
+
+   
+</body>
+</html>

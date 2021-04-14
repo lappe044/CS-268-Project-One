@@ -1,0 +1,86 @@
+body {
+  margin: 0px;
+}
+
+form {
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  width: 24rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  margin: auto;
+  font-family: "Times New Roman", Times, serif;
+}
+
+h3 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid rgb(187, 180, 180);
+  padding: 10px;
+  width: 18rem;
+  color: #c5ecfd;
+}
+
+::-webkit-input-placeholder {
+  color: #c5ecfd;
+}
+::-moz-input-placeholder {
+  color: #c5ecfd;
+}
+::ms-input-placeholder {
+  color: #c5ecfd;
+}
+
+label {
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+button {
+  background: #2e8db6;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  background: #2e8db6;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
