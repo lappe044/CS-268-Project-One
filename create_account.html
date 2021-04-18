@@ -15,7 +15,7 @@
         #background{
             background-image: url("images/switzerland.jpg");
             width: 100%;
-            height: 30rem; 
+            height: 40rem; 
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -46,30 +46,30 @@
             <a href="contact-us.html">Contact</a>
         </nav>
     </header>
-
-        <div id = "background">
-
-        <div id = "container">
+    <div id = "background">
+        
+        <div id = "container2">
             
-            <form action="login.php" method="post">
+            <form action="insert_student.php" method="post">
 
-            <h3>Epic MT</h3>
+            <h3>Create Account</h3>
 
-            <input type="text" placeholder="Enter Username" name="username" id="username" required>
-            <input type="password" placeholder="Enter Password" name="password" id="password" required>
-
-            <button type="submit">Login</button>
-
-            
-            <!----put into flexbox-->
-            <button type = "button" class="cancelbtn">Cancel</button>
-            <span class="psw">New <a href="create_account.html">user?</a></span>
+            <input type = "text" placeholder="Enter email" name = "email" required>
+            <input type = "text" placeholder="Enter full name" name = "name" required>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit">Sign Up</button>
+           
+            <button type="button" class="cancelbtn"  onclick="document.location ='login.html'">Cancel</button>
             </form>
             
               
-        </div> 
-        </div>
-       
+          </div> 
+    
+
+ 
+    </div>
+
 
         <div id = "footer">
             <div class = left>
