@@ -1,0 +1,54 @@
+#infoBox {
+  border-bottom: 3px solid #415d48;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+#infoBox > p {
+  text-align: center;
+}
+
+#twoBoxLayout {
+  width: 90%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-bottom: 30px;
+}
+
+#leftBox,
+#rightBox {
+  width: 45%;
+}
+
+#leftBox > img,
+#rightBox > img {
+  width: 100%;
+  height: 300px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+table,
+td,
+th {
+  border-collapse: collapse;
+  border: 2px solid black;
+}
+
+table {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 80%;
+}
+
+th {
+  color: white;
+}

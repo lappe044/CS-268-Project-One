@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/login.css">
+    
+    <title>Login</title>
+
+    <style>
+        #background{
+            background-image: url("images/switzerland.jpg");
+            width: 100%;
+            height: 40rem; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            overflow: hidden;
+            
+        }
+        </style>
+</head>
+<body>
+
+    <div id="top">
+        <img src="images/logo1.png" alt="drawn picture of a mountain range">
+    </div>
+    <a href="index.html"><h1>Epic MT</h1></a>
+    <header>
+        <div onclick="toggleNav()"><img class="hamburger" src="images/download.png" alt="navigational hamburger"></div>
+        <nav class="toggle-nav">
+            <a href = "index.html">Home</a>
+            <a href ="africa.html">Africa</a>
+            <a href="north-america.html">North America</a>
+            <a href="south-america.html">South America</a>
+            <a href ="europe.html">Europe</a>
+            <a href="asia.html">Asia</a>
+            <a href="oceania.html">Oceania</a>
+            <a href="antarctica.html">Antarctica</a>
+            <a href="about.html">About</a>
+            <a href="contact-us.html">Contact</a>
+        </nav>
+    </header>
+    <div id = "background">
+        
+        <div id = "container2">
+            
+            <form action="insert_customer.php" method="post">
+
+            <h3>Create Account</h3>
+
+            <input type = "text" placeholder="Enter email" name = "email" required>
+            <input type = "text" placeholder="Enter full name" name = "name" required>
+            <input type="text" placeholder="Enter Username" name="username" required>
+            <input type="password" placeholder="Enter Password" name="password" required>
+            <button type="submit">Sign Up</button>
+           
+            <button type="button" class="cancelbtn"  onclick="document.location ='login.html'">Cancel</button>
+            </form>
+            
+              
+          </div> 
+    
+
+ 
+    </div>
+
+
+        <div id = "footer">
+            <div class = left>
+                <span>Copyright <script>document.write(new Date().getFullYear());</script></span>
+            </div>
+            <div class = "right">
+                <a href="https://www.facebook.com/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/" target = "_blank" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/" target = "_blank" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        
+          
+        
+
+   
+</body>
+</html>
