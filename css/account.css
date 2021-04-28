@@ -1,4 +1,5 @@
-#infoBox {
+#infoBox,
+#infoBox2 {
   border-bottom: 3px solid #415d48;
   width: 80%;
   margin-left: auto;
@@ -10,7 +11,8 @@
   text-align: center;
 }
 
-#twoBoxLayout {
+#twoBoxLayout,
+#twoBoxLayout2 {
   width: 90%;
   box-sizing: border-box;
   display: flex;
@@ -20,7 +22,9 @@
 }
 
 #leftBox,
-#rightBox {
+#rightBox,
+#leftBox2,
+#rightBox2 {
   width: 45%;
 }
 

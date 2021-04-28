@@ -23,28 +23,30 @@
         <div onclick="toggleNav()"><img class="hamburger" src="images/download.png" alt="navigational hamburger"></div>
         <nav class="toggle-nav">
             <a href = "index.html">Home</a>
-            <a href ="africa.html">Africa</a>
+            <a href = "africa.html">Africa</a>
             <a href="north-america.html">North America</a>
             <a href="south-america.html">South America</a>
-            <a href ="europe.html">Europe</a>
+            <a href = "europe.html">Europe</a>
             <a href="asia.html">Asia</a>
             <a href="oceania.html">Oceania</a>
             <a href="antarctica.html">Antarctica</a>
             <a href="about.html">About</a>
             <a href="contact-us.html">Contact</a>
+            <a href = "login.html">Login</a>
         </nav>
-</header>
+    </header> 
 
 
     <div id = "flexbox">
         <img id = "founder_pic" src="images/Tent.jpg" alt="Picture of 2 founders and their dog">
         <div id="title">
             <?php
+                session_start();
                 // Get a connection for the database
                 require_once('sql_conn.php');
 
-                // Create a query for the database
-                 $query = "SELECT C_name FROM users WHERE Id  = 2";
+                
+                 $query = "Select C_name FROM users WHERE Id =" . $_SESSION['Id'];
 
                 // Get a response from the database by sending the connection
                 // and the query
@@ -60,27 +62,19 @@
         </div>
     </div>
 
-    <div id = "infoBox">
-
-
+    <div id = "infoBox2">
     
             <p>Hello! Welcome to your Epic MT employee portal. You can use this page to see your scheduled trips, access
             your employee profile, enter your timecard information, and so much more! 
             </p> 
 
-             
-            <div id = "twoBoxLayout">
-                <div id = "leftBox">
-                <a class="button" href="asia.html">Trip Options</a>
-                
-                </div>    
-                <div id = "rightBox">
-                <a class="button" href="asia.html">Trip Options</a>
-                </div>    
-             </div>
-    </div>        
+     
+</div> 
 
-    
+            
+           
+               
+        
     <h2>Upcoming Trips</h2> 
 
     
@@ -137,6 +131,37 @@
 
         ?>
 
+<div id= "trip_sections">
+        <div class = "brown_card">
+            <div class = "image_container">
+                <img src="images/south-america.jpg" alt="Ruins of Machu Picchu">
+                <h2>Payroll</h2>
+            </div>
+                <a class="button" href="https://www.workday.com/" target="_blank" >Workday</a>
+        </div>
+        <div class = "green_card">
+            <div class = "image_container">
+                <img src="images/north-america.jpg" alt="North American Grand Canyon">
+                <h2>Time Card</h2>
+            </div>
+            <a class="button" href="https://www.workday.com/" target="_blank" >Workday</a>
+        </div>
+        
+        <div class = "blue_card">
+            <div class = "image_container">
+                <img src="images/Europe.jpg" alt="European Mountain Range">
+                <h2>Employee Benefits</h2>
+            </div>
+                <a class="button" href="https://www.workday.com/" target="_blank" >Workday</a>
+        </div>
+        <div class = "brown2_card">
+            <div class = "image_container">
+                <img src="images/Asia.jpg" alt="Asian Mountain Range">
+                <h2>Time Off</h2>
+            </div>
+                <a class="button" href="https://www.workday.com/" target="_blank" >Workday</a>
+        </div>
+    </div>
 
 
 

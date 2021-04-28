@@ -22,28 +22,30 @@
         <div onclick="toggleNav()"><img class="hamburger" src="images/download.png" alt="navigational hamburger"></div>
         <nav class="toggle-nav">
             <a href = "index.html">Home</a>
-            <a href ="africa.html">Africa</a>
+            <a href = "africa.html">Africa</a>
             <a href="north-america.html">North America</a>
             <a href="south-america.html">South America</a>
-            <a href ="europe.html">Europe</a>
+            <a href = "europe.html">Europe</a>
             <a href="asia.html">Asia</a>
             <a href="oceania.html">Oceania</a>
             <a href="antarctica.html">Antarctica</a>
             <a href="about.html">About</a>
             <a href="contact-us.html">Contact</a>
+            <a href = "login.html">Login</a>
         </nav>
-</header>
+    </header> 
 
 
     <div id = "flexbox">
         <img id = "founder_pic" src="images/Tent.jpg" alt="Picture of 2 founders and their dog">
         <div id="title">
             <?php
+                session_start();
                 // Get a connection for the database
                 require_once('sql_conn.php');
 
                 // Create a query for the database
-                 $query = "SELECT C_name FROM users";
+                $query = "Select C_name FROM users WHERE Id =" . $_SESSION['Id'];
 
                 // Get a response from the database by sending the connection
                 // and the query

@@ -32,7 +32,7 @@
           
         // Close connection
         mysqli_close($dbc);
-        header('Location: client_account.html'); 
+        header('Location: client_account.php'); 
         ?>
     </center>
 
