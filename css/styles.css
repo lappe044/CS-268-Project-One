@@ -13,7 +13,7 @@ p {
   font-family: "Times New Roman", Times, serif;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   padding: 1rem 0;
   text-align: center;
   color: #bcabae;
@@ -60,43 +60,50 @@ section > h3 {
   text-align: left;
   padding-top: 3rem;
 }
+
 header nav {
-  background-color: #2d2e2e;
-  position: absolute;
-  right: -100%;
-  top: 4.75rem;
+    background-color: #2d2e2e;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: -100%;
+    transition: left 1s ease-in-out;
+    top: 4.75rem;
 }
 header nav a {
-  display: block;
-  color: #fbfbfb;
-  text-align: center;
-  text-decoration: none;
-  padding: 1rem;
-  width: 5rem;
-  font-size: 17px;
+    display: block;
+    color: #fbfbfb;
+    text-align: center;
+    text-decoration: none;
+    padding: 1.5rem;
+    border: 1px solid #bcabae;
+    font-size: 17px;
 }
-
 nav a:hover {
   color: #bcabae;
   text-decoration: underline;
 }
 header {
   position: fixed;
-  background-color: #2d2e2e85;
+
   z-index: 1;
   top: 0;
   width: 100%;
 }
 header .show {
-  right: 0;
+  left: 0;
 }
 .hamburger {
   width: 40px;
-  height: 3rem;
-  position: absolute;
-  right: 5px;
-  align-content: center;
-  margin-top: 0.5rem;
+  padding: 0.5rem;
+  right: 0.5rem;
+  display: inline-block;
+}
+.hamburger hr {
+  margin: 0.75rem 0;
+  border-width: 2px;
+  border-style: solid;
+  color: pink;
 }
 a {
   text-decoration: none;
@@ -248,7 +255,7 @@ input[type="number"] {
   flex-direction: row;
   color: white;
   margin: 5px 2px;
-  font-size: 15px;
+  font-size: 30px;
 }
 
 .right {
@@ -277,6 +284,11 @@ input[type="number"] {
   color: white;
 }
 
+@media(min-width: 600px) {
+  header nav {
+    width: 50%;
+  }
+}
 /***desktop styling*/
 @media (min-width: 1000px) {
   body {

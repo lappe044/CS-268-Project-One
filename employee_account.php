@@ -10,6 +10,7 @@
     <link rel="stylesheet" href = "css/index.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel = "stylesheet" href = "css/about.css">
+    <script src="toggle-nav.js"></script>
 
     <title>Account</title>
 </head>
@@ -20,7 +21,11 @@
     </div>
     <a href="index.html"><h1>Epic MT</h1></a>
     <header>
-        <div onclick="toggleNav()"><img class="hamburger" src="images/download.png" alt="navigational hamburger"></div>
+    <div class="hamburger" onclick="toggleNav()">
+                <hr>
+                <hr>
+                <hr>
+            </div>
         <nav class="toggle-nav">
             <a href = "index.html">Home</a>
             <a href = "africa.html">Africa</a>
