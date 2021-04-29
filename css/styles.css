@@ -1,6 +1,5 @@
 /**mobile styling*/
 * {
-  
   outline: none;
 }
 body {
@@ -8,6 +7,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   font-size: 25px;
+  overflow-x: hidden;
 }
 p {
   font-family: "Times New Roman", Times, serif;
@@ -85,7 +85,6 @@ nav a:hover {
 }
 header {
   position: fixed;
-
   z-index: 1;
   top: 0;
   width: 100%;
@@ -122,7 +121,38 @@ a {
 .main-text-overlay {
   text-align: center;
   top: 19rem;
- 
+}
+.caption {
+  position: relative;
+  width: 33.33%;
+
+}
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: 22rem;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.text {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.caption:hover .text {
+  opacity: 1;
 }
 /**formating of buttons in individual pages*/
 .sa-button,
@@ -151,6 +181,7 @@ a {
   flex-direction: row;
   width: 100%;
   align-content: center;
+  margin-top: 1rem;
 }
 .gallery > img {
   padding-top: 1rem;
