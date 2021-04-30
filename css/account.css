@@ -1,5 +1,8 @@
-#infoBox,
-#infoBox2 {
+#text {
+  text-align: center;
+}
+
+#infoBox {
   border-bottom: 3px solid #415d48;
   width: 80%;
   margin-left: auto;
@@ -7,37 +10,8 @@
   margin-bottom: 30px;
 }
 
-#infoBox > p {
-  text-align: center;
-}
-
-#twoBoxLayout,
-#twoBoxLayout2 {
-  width: 90%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  margin-left: auto;
-  margin-bottom: 30px;
-}
-
-#leftBox,
-#rightBox,
-#leftBox2,
-#rightBox2 {
-  width: 45%;
-}
-
-#leftBox > img,
-#rightBox > img {
-  width: 100%;
-  height: 300px;
-}
-
 h2 {
   text-align: center;
-  margin-top: 70px;
-  margin-bottom: 40px;
 }
 
 table,
@@ -55,4 +29,19 @@ table {
 
 th {
   color: white;
+}
+
+@media (max-width: 730px) {
+  table {
+    width: 100px;
+  }
+
+  h3 {
+    font-size: 50px;
+  }
+
+  td,
+  th {
+    font-size: 20px;
+  }
 }

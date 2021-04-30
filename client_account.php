@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href = "css/account.css">
-    <link rel = "stylesheet" href = "css/about.css">
+    <link rel="stylesheet" href = "css/about.css">
+    <link rel="stylesheet" href="css/global.css">
+    
 
     <title>Account</title>
 </head>
@@ -35,13 +36,13 @@
             <a href="antarctica.html">Antarctica</a>
             <a href="about.html">About</a>
             <a href="contact-us.html">Contact</a>
-            <a href = "login.html">Login</a>
+            <a href = "login.html">Logout</a>
         </nav>
     </header> 
 
 
     <div id = "flexbox">
-        <img id = "founder_pic" src="images/Gre.jpg" alt="Picture of 2 founders and their dog">
+        <img id = "founder_pic" src="images/Green_Backpacker.jpg" alt="Backpacker in lush green forest">
         <div id="title">
             <?php
                 session_start();
@@ -65,31 +66,28 @@
         </div>
     </div>
 
-    <div id = "infoBox">
-
-
     
-            <p>Hello! Welcome to your Epic MT portal. You can use this page to see your scheduled trips and book new trips. 
+            <p style = "text-align: center">Hello! Welcome to your Epic MT portal. You can use this page to see your scheduled trips and book new trips. 
             We're so excited that you've chosen Epic MT for your next adventure! 
             </p>
 
-            <p>If you encounter any issues or have any questions, 
+            <p style="text-align: center">If you encounter any issues or have any questions, 
             please contact us. 
             </p>
+        
+        
+
+            <div id = "threeImages">
+            <img src="images/Backpacking_Group.jpg" alt="Tent setup">
+            <img src="images/Backpacks.jpg" alt="Picture of Founders walking on snowy trail">
+            <img src="images/Backpacking-Group2.jpg" alt="Backpacks from first trip">
+            </div>
+
+     
 
           
 
-            <div id = "twoBoxLayout">
-                <div id = "leftBox">
-                    <img src="images/Snowy_Trek.jpg" alt="Picture of Founders walking on snowy trail">
-                </div>    
-                <div id = "rightBox">
-                    <img src="images/Backpacks.jpg" alt="Backpacks from first trip">  
-                </div>    
-             </div>
-    
-
-    </div>             
+             
         
 
     <h2>Your Trips</h2> 
@@ -101,7 +99,7 @@
        
 
         // Create a query for the database
-        $query2 = "SELECT * FROM trips";
+        $query2 = "SELECT * FROM trips WHERE C_ID = ". $_SESSION['Id'];
 
         // Get a response from the database by sending the connection
         // and the query

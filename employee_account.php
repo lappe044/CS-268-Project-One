@@ -37,13 +37,13 @@
             <a href="antarctica.html">Antarctica</a>
             <a href="about.html">About</a>
             <a href="contact-us.html">Contact</a>
-            <a href = "login.html">Login</a>
+            <a href = "login.html">Logout</a>
         </nav>
     </header> 
 
 
     <div id = "flexbox">
-        <img id = "founder_pic" src="images/Tent.jpg" alt="Picture of 2 founders and their dog">
+        <img id = "founder_pic" src="images/women_tent.jpg" alt="Picture of 2 founders and their dog">
         <div id="title">
             <?php
                 session_start();
@@ -67,14 +67,12 @@
         </div>
     </div>
 
-    <div id = "infoBox2">
+    <div id = "infoBox">
     
             <p>Hello! Welcome to your Epic MT employee portal. You can use this page to see your scheduled trips, access
             your employee profile, enter your timecard information, and so much more! 
             </p> 
-
-     
-</div> 
+    </div> 
 
             
            
@@ -139,32 +137,32 @@
 <div id= "trip_sections">
         <div class = "brown_card">
             <div class = "image_container">
-                <img src="images/south-america.jpg" alt="Ruins of Machu Picchu">
+                <img src="images/Workday_yellow_sunrise.jpg" alt="Yellow Sunrise">
                 <h2>Payroll</h2>
             </div>
-                <a class="button" href="https://www.workday.com/" target="_blank" >Workday</a>
+                <a class="button" href="https://www.workday.com/" target="_blank" >Payroll</a>
         </div>
-        <div class = "green_card">
+        <div class = "green_card" style = "background-color: #3f3431;">
             <div class = "image_container">
-                <img src="images/north-america.jpg" alt="North American Grand Canyon">
+                <img src="images/Workday_andes.jpg" alt="North American Grand Canyon">
                 <h2>Time Card</h2>
             </div>
-            <a class="button" href="https://www.workday.com/" target="_blank" >Workday</a>
+            <a class="button" href="https://www.workday.com/" target="_blank" >Time Sheet</a>
         </div>
         
-        <div class = "blue_card">
+        <div class = "blue_card" style = "background-color: #3f3431;">
             <div class = "image_container">
-                <img src="images/Europe.jpg" alt="European Mountain Range">
+                <img src="images/Workday_three_guys.jpg" alt="European Mountain Range">
                 <h2>Employee Benefits</h2>
             </div>
-                <a class="button" href="https://www.workday.com/" target="_blank" >Workday</a>
+                <a class="button" href="https://www.workday.com/" target="_blank" >Benefits</a>
         </div>
         <div class = "brown2_card">
             <div class = "image_container">
-                <img src="images/Asia.jpg" alt="Asian Mountain Range">
+                <img src="images/Workday_yellow_mountains.jpg" alt="Asian Mountain Range">
                 <h2>Time Off</h2>
             </div>
-                <a class="button" href="https://www.workday.com/" target="_blank" >Workday</a>
+                <a class="button" href="https://www.workday.com/" target="_blank" >Time Off</a>
         </div>
     </div>
 
