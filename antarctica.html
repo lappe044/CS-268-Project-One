@@ -15,10 +15,10 @@
         // Initialize and add the map
         function initMap() {
           // The location of Uluru
-          const kili = { lat: -3.065384, lng: 37.319309 };
-          const siemien = { lat: 13.229654, lng: 38.231973 };
-          const atlas = { lat: 31.430000, lng: -6.940000 };
-          const center1 = { lat: 17.146803, lng: 14.814709 };
+          const falk = { lat: -51.796719, lng: -58.594932 };
+          const weddell = { lat: -75.797085, lng: -45.672926 };
+          const polar = { lat: -69.366893, lng:-86.849686 };
+          const center1 = { lat: -65.192843, lng: -70.769606 };
           // The map, centered at Uluru
           const map = new google.maps.Map(document.getElementById("map"), {
             zoom: 3,
@@ -26,21 +26,21 @@
           });
           // The marker, positioned at Uluru
           const marker = new google.maps.Marker({
-            position: kili,
+            position: falk,
             map: map,
-            title: "Mount Kilimanjaro",
+            title: "Falkland Islands",
             visible: true,
           });
           const marker2 = new google.maps.Marker({
-            position: siemien,
+            position: polar,
             map: map,
-            title: "Simien Mountains",
+            title: "Polar Circle",
             visible: true,
           });
           const marker3 = new google.maps.Marker({
-            position: atlas,
+            position: weddell,
             map: map,
-            title: "High Atlas Mountains",
+            title: "Weddell Sea",
             visible: true,
           });
         }
@@ -79,19 +79,20 @@
             <img src="images/Antarctica.jpg" alt="Antarctica Ice Configuration">
             <h2 class="text-overlay">Antarctica</h2>
         </div>
-        
-        <p class = "special">Have you always wanted to explore the snowy tundra of Antarctic? Then one of our Antarctica trips is for 
-            you. Not for the faint of heart or the easily cold, our Antarctica trips are differnt than our other offerings. 
-            Passengers will spend most of their time on a cruise ship, with activities like hiking, camping, diving, 
-            kayaking, and obseving wildlife spread throughout the trip. Epic MT offers three Antarctica trips:
-            Falkland Islands, Polar Circle, and Weddell Sea. Read below to find out more!  
-        </p>
-        <div id="map"></div>
-        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-        <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb4LN8Dx87FawjopcJfj6NQW6su4A4ezo&callback=initMap&libraries=&v=weekly"
-        async
-        ></script>
+        <div class="about">
+            <p>Have you always wanted to explore the snowy tundra of Antarctic? Then one of our Antarctica trips is for 
+                you. Not for the faint of heart or the easily cold, our Antarctica trips are differnt than our other offerings. 
+                Passengers will spend most of their time on a cruise ship, with activities like hiking, camping, diving, 
+                kayaking, and obseving wildlife spread throughout the trip. Epic MT offers three Antarctica trips:
+                Falkland Islands, Polar Circle, and Weddell Sea. Read below to find out more!  
+            </p>
+            <div id="map"></div>
+            <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb4LN8Dx87FawjopcJfj6NQW6su4A4ezo&callback=initMap&libraries=&v=weekly"
+            async
+            ></script>
+        </div>
 
     </div>
 

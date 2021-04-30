@@ -28,19 +28,19 @@
           const marker = new google.maps.Marker({
             position: kili,
             map: map,
-            title: "Mount Kilimanjaro",
+            title: "Alps",
             visible: true,
           });
           const marker2 = new google.maps.Marker({
             position: siemien,
             map: map,
-            title: "Simien Mountains",
+            title: "Tatra Mountains",
             visible: true,
           });
           const marker3 = new google.maps.Marker({
             position: atlas,
             map: map,
-            title: "High Atlas Mountains",
+            title: "West Highland Way",
             visible: true,
           });
         }
@@ -77,18 +77,19 @@
             <img src="images/Europe-2.jpg" alt="European Mountain Range">
             <h2 class="text-overlay">Europe</h2>
         </div>
-        
-        <p class = "special">Europe is one of our most popular backpacking destinations! The continent features beautiful mountain ranges that span multiple
-            countries and hiking paths that enable you to experience each country's unique landscape. 
-            Epic MT offers three different Europe trip packages: the Alps, the Tatra Mountains, and the West Highland Way.
-            Read below to find out more!  
-        </p>
-        <div id="map"></div>
-        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-        <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb4LN8Dx87FawjopcJfj6NQW6su4A4ezo&callback=initMap&libraries=&v=weekly"
-        async
-        ></script>
+        <div class="about">
+            <p >Europe is one of our most popular backpacking destinations! The continent features beautiful mountain ranges that span multiple
+                countries and hiking paths that enable you to experience each country's unique landscape. 
+                Epic MT offers three different Europe trip packages: the Alps, the Tatra Mountains, and the West Highland Way.
+                Read below to find out more!  
+            </p>
+            <div id="map"></div>
+            <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb4LN8Dx87FawjopcJfj6NQW6su4A4ezo&callback=initMap&libraries=&v=weekly"
+            async
+            ></script>
+        </div>
 
     </div>
 

@@ -28,19 +28,19 @@
               const marker = new google.maps.Marker({
                 position: kili,
                 map: map,
-                title: "Mount Kilimanjaro",
+                title: "Cradle Mountain National Park",
                 visible: true,
               });
               const marker2 = new google.maps.Marker({
                 position: siemien,
                 map: map,
-                title: "Simien Mountains",
+                title: "Lake Waikaremoana",
                 visible: true,
               });
               const marker3 = new google.maps.Marker({
                 position: atlas,
                 map: map,
-                title: "High Atlas Mountains",
+                title: "Whanganui River",
                 visible: true,
               });
             }
@@ -79,18 +79,19 @@
             <img src="images/Oceania.jpg" alt="Beautiful Oceania Shoreline">
             <h2 class="text-overlay">Oceania</h2>
         </div>
-        
-        <p class = "special">If you want an adventure down under, then our Oceania trips are for you! Featuring gorgeous waterfalls, 
-            thrilling canoe rides, and craggy peaks, the trips listed below let you experience the best of Australia
-            and New Zealand. Epic MT offers three different Oceania trips: Cradle Mountain National Park, Lake Waikaremoana 
-            Great Walk, and Whanganui Journey. Read below to find out more! 
-        </p>
-        <div id="map"></div>
-                <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-                <script
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb4LN8Dx87FawjopcJfj6NQW6su4A4ezo&callback=initMap&libraries=&v=weekly"
-                async
-                ></script>
+        <div class="about">
+            <p>If you want an adventure down under, then our Oceania trips are for you! Featuring gorgeous waterfalls, 
+                thrilling canoe rides, and craggy peaks, the trips listed below let you experience the best of Australia
+                and New Zealand. Epic MT offers three different Oceania trips: Cradle Mountain National Park, Lake Waikaremoana 
+                Great Walk, and Whanganui Journey. Read below to find out more! 
+            </p>
+            <div id="map"></div>
+            <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+            <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb4LN8Dx87FawjopcJfj6NQW6su4A4ezo&callback=initMap&libraries=&v=weekly"
+            async
+            ></script>
+        </div>
 
     </div>
 
