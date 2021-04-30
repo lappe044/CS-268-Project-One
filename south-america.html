@@ -8,6 +8,40 @@
         <script src="toggle-nav.js"></script>
         <title>South America </title>
         <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
+        <script>
+            // Initialize and add the map
+            function initMap() {
+              // The location of Uluru
+              const kili = { lat: -3.065384, lng: 37.319309 };
+              const siemien = { lat: 13.229654, lng: 38.231973 };
+              const atlas = { lat: 31.430000, lng: -6.940000 };
+              const center1 = { lat: 17.146803, lng: 14.814709 };
+              // The map, centered at Uluru
+              const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: center1,
+              });
+              // The marker, positioned at Uluru
+              const marker = new google.maps.Marker({
+                position: kili,
+                map: map,
+                title: "Mount Kilimanjaro",
+                visible: true,
+              });
+              const marker2 = new google.maps.Marker({
+                position: siemien,
+                map: map,
+                title: "Simien Mountains",
+                visible: true,
+              });
+              const marker3 = new google.maps.Marker({
+                position: atlas,
+                map: map,
+                title: "High Atlas Mountains",
+                visible: true,
+              });
+            }
+          </script>
     </head> 
     <body>
         
@@ -40,6 +74,12 @@
             <h2 class="main-text-overlay">South America</h2>
             <section class="about">
                 <p>South America’s geologic structure consists of two dissymmetric parts. In the larger, eastern portion are found a number of stable shields forming highland regions, separated by large basins (including the vast Amazon basin). The western portion is occupied almost entirely by the Andes Mountains. The great range in elevation produces an unrivaled diversity of climatic and ecological zones, which is probably the most prominent characteristic of South American geography. Epic MT provides three distinct trips on this landmass including: the Aconcagua Mountain, the Amazonian Rainforest and the summit of Monte Fitz Roy. Read below to find out more!</p>
+                <div id="map"></div>
+                <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb4LN8Dx87FawjopcJfj6NQW6su4A4ezo&callback=initMap&libraries=&v=weekly"
+                async
+                ></script>
             </section>
             <section class="aconcagua">
                 <img class="shrink" src="images/aconcagua/acon.jpg" alt="aerial view of snowy peaks of Aconcagua Mountain">

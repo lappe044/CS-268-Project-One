@@ -7,6 +7,40 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
         <script src="toggle-nav.js"></script>
+        <script>
+            // Initialize and add the map
+            function initMap() {
+              // The location of Uluru
+              const kili = { lat: -3.065384, lng: 37.319309 };
+              const siemien = { lat: 13.229654, lng: 38.231973 };
+              const atlas = { lat: 31.430000, lng: -6.940000 };
+              const center1 = { lat: 17.146803, lng: 14.814709 };
+              // The map, centered at Uluru
+              const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 3,
+                center: center1,
+              });
+              // The marker, positioned at Uluru
+              const marker = new google.maps.Marker({
+                position: kili,
+                map: map,
+                title: "Mount Kilimanjaro",
+                visible: true,
+              });
+              const marker2 = new google.maps.Marker({
+                position: siemien,
+                map: map,
+                title: "Simien Mountains",
+                visible: true,
+              });
+              const marker3 = new google.maps.Marker({
+                position: atlas,
+                map: map,
+                title: "High Atlas Mountains",
+                visible: true,
+              });
+            }
+          </script>
         <title>Asia</title>
     </head> 
     <body>
@@ -40,6 +74,12 @@
             <h2 class="main-text-overlay">Asia</h2>
             <section class="about">
                 <p>Asia, the world’s largest and most diverse continent. It occupies the eastern four-fifths of the giant Eurasian landmass. Asia is more a geographic term than a homogeneous continent, and the use of the term to describe such a vast area always carries the potential of obscuring the enormous diversity among the regions it encompasses. Asia has both the highest and the lowest points on the surface of Earth, has the longest coastline of any continent, is subject overall to the world’s widest climatic extremes, and, consequently, produces the most varied forms of vegetation and animal life on Earth. Epic MT offers three different excursions that encompasses the diversity of the landscape of the Asian continent: the Himalayan Mountains, the Zagros Mountains, and the Altai Moutains. Read below to find out more!</p>
+                <div id="map"></div>
+                <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+                <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb4LN8Dx87FawjopcJfj6NQW6su4A4ezo&callback=initMap&libraries=&v=weekly"
+                async
+                ></script>
             </section>
             <section class="himalayas">
                 <img class="shrink" src="images/himalayas/him4.jpg" alt="Mount Everest with sunny glow">

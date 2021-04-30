@@ -193,6 +193,13 @@ a {
   opacity: 1;
 }
 
+#map {
+  height: 400px;
+  width: 40%;
+  align-items: center;
+  padding: 1rem;
+}
+
 @media(min-width: 600px) {
   header nav {
     width: 50%;

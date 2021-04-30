@@ -42,6 +42,13 @@ img {
 .about {
   padding-bottom: 0;
   font-size: 25px;
+  display: flex;
+  margin: 2rem auto;
+}
+.about > p {
+  width: 50%;
+  padding: 1rem;
+  padding-left: 3rem;
 }
 section {
   text-align: center;
@@ -153,6 +160,13 @@ a {
 /* When you mouse over the container, fade in the overlay title */
 .caption:hover .text {
   opacity: 1;
+}
+
+#map {
+  height: 400px;
+  width: 40%;
+  align-items: center;
+  padding: 1rem;
 }
 /**formating of buttons in individual pages*/
 .sa-button,

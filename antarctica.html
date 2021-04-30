@@ -11,6 +11,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
     <script src="toggle-nav.js"></script>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          const kili = { lat: -3.065384, lng: 37.319309 };
+          const siemien = { lat: 13.229654, lng: 38.231973 };
+          const atlas = { lat: 31.430000, lng: -6.940000 };
+          const center1 = { lat: 17.146803, lng: 14.814709 };
+          // The map, centered at Uluru
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 3,
+            center: center1,
+          });
+          // The marker, positioned at Uluru
+          const marker = new google.maps.Marker({
+            position: kili,
+            map: map,
+            title: "Mount Kilimanjaro",
+            visible: true,
+          });
+          const marker2 = new google.maps.Marker({
+            position: siemien,
+            map: map,
+            title: "Simien Mountains",
+            visible: true,
+          });
+          const marker3 = new google.maps.Marker({
+            position: atlas,
+            map: map,
+            title: "High Atlas Mountains",
+            visible: true,
+          });
+        }
+      </script>
 </head>
 <body>
 
@@ -52,6 +86,12 @@
             kayaking, and obseving wildlife spread throughout the trip. Epic MT offers three Antarctica trips:
             Falkland Islands, Polar Circle, and Weddell Sea. Read below to find out more!  
         </p>
+        <div id="map"></div>
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb4LN8Dx87FawjopcJfj6NQW6su4A4ezo&callback=initMap&libraries=&v=weekly"
+        async
+        ></script>
 
     </div>
 
