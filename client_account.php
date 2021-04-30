@@ -41,7 +41,7 @@
 
 
     <div id = "flexbox">
-        <img id = "founder_pic" src="images/Tent.jpg" alt="Picture of 2 founders and their dog">
+        <img id = "founder_pic" src="images/Gre.jpg" alt="Picture of 2 founders and their dog">
         <div id="title">
             <?php
                 session_start();
