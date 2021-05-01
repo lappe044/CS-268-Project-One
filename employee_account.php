@@ -134,7 +134,17 @@
 
         ?>
 
-<div id= "trip_sections">
+        <form action="delete_trip.php" method="post" id="cancel_trip">
+
+            
+        <h5 align='left'><b>Cancel Trip</b><input type="number" name="id" required>
+
+        <input type="submit" value="Delete"></h5>
+
+        </form>
+
+
+        <div id= "trip_sections">
         <div class = "brown_card">
             <div class = "image_container">
                 <img src="images/Workday_yellow_sunrise.jpg" alt="Yellow Sunrise">
@@ -171,7 +181,7 @@
 
        
 
-        <div id = "footer">
+    <div id = "footer">
             <div class = left>
                 <span>Copyright <script>document.write(new Date().getFullYear());</script></span>
             </div>
@@ -181,7 +191,6 @@
                 <a href="https://www.instagram.com/" target = "_blank" class="fa fa-instagram"></a>
             </div>
         </div>
-        
           
         
 

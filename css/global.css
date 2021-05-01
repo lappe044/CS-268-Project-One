@@ -1,6 +1,10 @@
+html {
+  height: 100%;
+}
 body {
   margin: 0px;
   padding: 0px;
+  height: 100%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 25px;
 }
@@ -19,7 +23,6 @@ h1 {
   transform: translate(-50%, -50%);
   top: 1rem;
 }
-
 
 header nav {
   background-color: #2d2e2e;
@@ -42,32 +45,32 @@ header nav a {
 }
 
 nav a:hover {
-color: #bcabae;
-text-decoration: underline;
+  color: #bcabae;
+  text-decoration: underline;
 }
 
 header {
-position: fixed;
-z-index: 1;
-top: 0;
-width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
 }
 
 header .show {
-left: 0;
+  left: 0;
 }
 
 .hamburger {
-width: 40px;
-padding: 0.5rem;
-right: 0.5rem;
-display: inline-block;
+  width: 40px;
+  padding: 0.5rem;
+  right: 0.5rem;
+  display: inline-block;
 }
 .hamburger hr {
-margin: 0.75rem 0;
-border-width: 2px;
-border-style: solid;
-color: pink;
+  margin: 0.75rem 0;
+  border-width: 2px;
+  border-style: solid;
+  color: pink;
 }
 
 a {
@@ -125,6 +128,8 @@ a {
   height: 70px;
   background-color: #2d2e2e;
   margin-top: 0.5%;
+  margin-bottom: 0px;
+  bottom: 0;
 }
 
 .left {
@@ -163,7 +168,6 @@ a {
 .caption {
   position: relative;
   width: 33.33%;
-
 }
 /* Make the image to responsive */
 .image {
@@ -180,8 +184,8 @@ a {
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
   color: #f1f1f1;
   width: 100%;
-  transition: .5s ease;
-  opacity:0;
+  transition: 0.5s ease;
+  opacity: 0;
   color: white;
   font-size: 20px;
   padding: 20px 0;
@@ -193,8 +197,7 @@ a {
   opacity: 1;
 }
 
-
-@media(min-width: 600px) {
+@media (min-width: 600px) {
   header nav {
     width: 50%;
   }
