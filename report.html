@@ -55,10 +55,10 @@
                 <li>Each page includes a mountain favicon</li>
             </ul>
         <li>Your site’s non-HTML resources must be organized. Images must be placed in a directory named images. 
-            CSS files must be placed in a directory named css. </li>
+            CSS files must be placed in a directory named css. JavaScript must be placed in a directory named js. </li>
             <ul>
-                <li>Our website oragnizes non-HTML resources in folders. Images are placed in a directory named images and CSS files 
-                    are placed in a directory named css. </li>
+                <li>Our website oragnizes non-HTML resources in folders. Images are placed in a directory named images, CSS files 
+                    are placed in a directory named css, and JavaScript are placed in a directory named js. </li>
             </ul>
         <li>
             Your site must not be built using any libraries or frameworks. Do not use Bootstrap, jQuery, React, Angular, Vue, or 
@@ -90,6 +90,14 @@
                 <li>Our site uses two different font faces. Headings, buttons, and the navbar use Arial and the body paragraphs
                     used Times New Roman.</lI>
             </ul>
+        <li>Your site must include at least four webpages implementing some sort of form (or informal collection of input elements). 
+            The form might submit data to a server using POST requests and retrieve data using GET requests. </li>
+                <ul>
+                    <li>Our site includes four webpages implementing some sort of form. The contact-us page, login, and create account
+                        all use forms with POST requests. Additionally, there is an input form on the employee pages that accesses the database
+                        and allows employees to cancel trips and delete them from the database. 
+                    </li>
+                </ul>
         <li>Your site must include links to external sites. Clicking on external links must open a new tab or window rather than 
             replace your page.
         </li>
@@ -100,6 +108,33 @@
             <ul>
                 <li>Our source code is readable and uses meaningful names for classes and IDs. For example, the layout of 3 images in our 
                     source code is a class entitled threeImages. </li>
+            </ul>
+        <li>Your site must include at least one animation, powered either by CSS or JavaScript.</li>
+            <ul>
+                <li>OUr site includes two new animations. The first is a hover affect over some of our pictures
+                    that tells users where the location is. Our hamburger icon also has a new animation where the 
+                    links slide out and cover the whole page. 
+                </li>
+            </ul>
+        <li>Your site should be able to use either MySQL or SQLite databases for storing and retrieving data. You could also use JSON format to 
+            implement this feature. 
+        </li>
+            <ul>
+                <li>Our site uses MySWL to store and retrieve data.</li>
+            </ul>
+        <li>BONUS POINTS: If you implement different functionality based on login credentials (such as administrators, users) you will 
+            be receiving 5 extra points. (Total is 40 points)</li>
+            <ul>
+                <li>Our site has different functionality based on loginn credentials. When customers
+                    login, all they can see are their upcoming trips. When employees login, they can see their
+                    upcoming trips, cancel trips, and access employee links such as timesheet and payroll. 
+                </li>
+            </ul>
+        <li>You should address the comments and feedback from Project 1 in this Project 2.</li>
+            <ul>
+                <li>We have addressed comments and feedback from Project 1. We will discuss this in more
+                    detail below. 
+                </li>
             </ul>
         <li>Your site's webpages should include a consistent navbar. 
         </li>
@@ -115,23 +150,81 @@
                 <li>Our website utilizes flexboxes. </li>
             </ul>
     </ol>
-    <p>
-        Note! 
-Hello Dr. Gomes and Karen. We just wanted to note that we understand the CSS stylesheets is a little confusing. 
-We did seperate style sheets for our seperate pages to show that we each contributed to every aspect of the project!
-Heather created the styles.css and Alexis broke hers up into multiple sheets. We just wanted to let you know that this was 
-an intentional choice. 
 
-    </p>
 
     <p>Client Critique: </p>
     <ul>
         <li>Add summarys/biography/guide spotlight to guide infomation</li>
-        <li>Add hover effects to images to display location</li>
-        <li>Add push pin map to display location of trip options</li>
-        <li>Images look amazing and clear.</li>
-        <li>Connect contact form to a database</li>
+        <li>Thank you for adding hover effects to images to display location and
+            including push pin map to display locations of trip options. 
+        </li>
+        <li>Add more functionality to customer page such as being able to book and purchase
+            trips </li>
+        <li>Add two factor authentification to login</li>
     </ul>
+
+    <p>Comments from Project 1</p>
+    <ul>
+        <li>We replaced some of the images that looked stretched or funky with higher
+            quality images (specially on the about page and some of the continent pages). We also changed how soon our layouts flipped to prevent images from looking stretched
+            or funky.
+        </li>
+        <li>We changed the card layout to include space between the cards. We also 
+            changed the card layout sooner to prevent pictures from looking distorted. 
+        </li>
+        <li>We added element shadows to text overlay to make it more visible</li>
+        <li>We changed the color of the hamburger element to make it more visible</li>
+        <li>We increased the size of the footer</li>
+        <li>We changed the color of the guide cards to match the color of the continent 
+            they gave tours in.
+        </li>
+        <li>We added animation over pictures to say where they where.</li>
+        <li>We added a map to display trip locations which created a more interesting
+            page layout.
+        </li>
+    </ul>
+
+    <p>Webpages with forms</p>
+    <ul>
+        <li>contact_us.html</li>
+        <li>login.html</li>
+        <li>create_account.html</li>
+        <li>employee_account.php</li>
+    </ul>
+
+    <p>Project Breakdown</p>
+    <p>Alexis</p>
+        <ul>
+            <li>about.html</li>
+            <li>antarctica.html</li>
+            <li>europe.html</li>
+            <li>oceania.html</li>
+            <li>login.html</li>
+            <li>login.php</li>
+            <li>create_account.html</li>
+            <li>create_account.php</li>
+            <li>client_account.php</li>
+            <li>employee_account.php</li>
+            <li>delete_trip.php</li>
+        </ul>
+    <p>Heather</p>
+        <ul>
+            <li>africa.html</li>
+            <li>asia.html</li>
+            <li>contact-us.html</li>
+            <li>confirmation.php</li>
+            <li>insert_customer.php</li>
+            <li>north-america.html</li>
+            <li>south-america.html</li>
+            <li>Created google map for each continent page</li>
+            <li>Created all animations</li>
+            <li>Created navbar and hamburger icon</li>
+        </ul>
+    <p>Both</p>
+        <ul>
+            <li>index.html</li>
+            <li>report.html</li>
+        </ul>
 </body>
 </html>
 
