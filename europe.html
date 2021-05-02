@@ -14,31 +14,29 @@
     <script>
         // Initialize and add the map
         function initMap() {
-          // The location of Uluru
-          const kili = { lat: -3.065384, lng: 37.319309 };
-          const siemien = { lat: 13.229654, lng: 38.231973 };
-          const atlas = { lat: 31.430000, lng: -6.940000 };
+          const alps = { lat: 46.871458, lng: 8.516876 };
+          const tatra = { lat: 49.203243, lng: 20.014069 };
+          const highland = { lat: 56.081101, lng: -4.436994 };
           const center1 = { lat: 17.146803, lng: 14.814709 };
-          // The map, centered at Uluru
+          // The map, centered at center1
           const map = new google.maps.Map(document.getElementById("map"), {
             zoom: 3,
             center: center1,
           });
-          // The marker, positioned at Uluru
           const marker = new google.maps.Marker({
-            position: kili,
+            position: alps,
             map: map,
             title: "Alps",
             visible: true,
           });
           const marker2 = new google.maps.Marker({
-            position: siemien,
+            position: tatra,
             map: map,
             title: "Tatra Mountains",
             visible: true,
           });
           const marker3 = new google.maps.Marker({
-            position: atlas,
+            position: highland,
             map: map,
             title: "West Highland Way",
             visible: true,
