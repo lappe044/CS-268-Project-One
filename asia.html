@@ -10,31 +10,29 @@
         <script>
             // Initialize and add the map
             function initMap() {
-              // The location of Uluru
-              const kili = { lat: -3.065384, lng: 37.319309 };
-              const siemien = { lat: 13.229654, lng: 38.231973 };
-              const atlas = { lat: 31.430000, lng: -6.940000 };
-              const center1 = { lat: 17.146803, lng: 14.814709 };
-              // The map, centered at Uluru
+              const hima = { lat: 28.598316, lng: 83.931062 };
+              const zagros = { lat: 31.147804, lng: 50.722636 };
+              const altai = { lat: 46.794233, lng: 92.575319 };
+              const center1 = { lat: 36, lng: 70 };
+              // The map centered
               const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 3,
+                zoom: 3.5,
                 center: center1,
               });
-              // The marker, positioned at Uluru
               const marker = new google.maps.Marker({
-                position: kili,
+                position: hima,
                 map: map,
                 title: "Himalayan Mountains",
                 visible: true,
               });
               const marker2 = new google.maps.Marker({
-                position: siemien,
+                position: zagros,
                 map: map,
                 title: "Zagros Mountains",
                 visible: true,
               });
               const marker3 = new google.maps.Marker({
-                position: atlas,
+                position: altai,
                 map: map,
                 title: "Altai Mountains",
                 visible: true,

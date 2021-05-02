@@ -11,31 +11,30 @@
         <script>
             // Initialize and add the map
             function initMap() {
-              // The location of Uluru
-              const kili = { lat: -3.065384, lng: 37.319309 };
-              const siemien = { lat: 13.229654, lng: 38.231973 };
-              const atlas = { lat: 31.430000, lng: -6.940000 };
-              const center1 = { lat: 17.146803, lng: 14.814709 };
-              // The map, centered at Uluru
+              const acon = { lat: -32.653179, lng: -70.010868 };
+              const rain = { lat: -5.465305, lng:  -62.215881 };
+              const roy = { lat: -49.271246, lng: -73.043226 };
+              const center1 = { lat: -25, lng: -68 };
+              // The map
               const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 3,
+                zoom: 3.1,
                 center: center1,
               });
               // The marker, positioned at Uluru
               const marker = new google.maps.Marker({
-                position: kili,
+                position: acon,
                 map: map,
                 title: "Aconcagua Summit",
                 visible: true,
               });
               const marker2 = new google.maps.Marker({
-                position: siemien,
+                position: rain,
                 map: map,
                 title: "Amazonian Rain Forest",
                 visible: true,
               });
               const marker3 = new google.maps.Marker({
-                position: atlas,
+                position: roy,
                 map: map,
                 title: "Monte Fitz Roy",
                 visible: true,

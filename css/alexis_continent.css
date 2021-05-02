@@ -39,19 +39,20 @@ p,
   width: 100%;
 }
 
-#map {
-  height: 400px;
-  width: 40%;
-  align-items: center;
-  padding: 1rem;
-}
-
 .about {
-  width: 100%;
   padding-bottom: 0;
   font-size: 25px;
   display: flex;
+  flex-direction: column;
   margin: 2rem auto;
+}
+
+#map {
+  height: 350px;
+  width: 80%;
+  padding: 1rem;
+  margin: auto;
+ 
 }
 
 .threeImages {
@@ -115,18 +116,7 @@ p,
     padding-top: 20px;
   }
   
-  .about {
-    padding: 5rem 0 4rem 0;
-  }
-
-  .about > p {
-    width: 50%;
-    padding: 1rem;
-    padding-left: 3rem;
-  }
-
-  p,
-  .special {
+  p {
     position: relative;
     text-align: left;
     padding: 0 15rem;
@@ -134,10 +124,20 @@ p,
     font-family: "Times New Roman", Times, serif;
   }
 
-  .special {
-    margin: auto;
-    width: 50%;
-    font-size: 25px;
-    padding: 0;
+  .about {
+    padding: 5rem 0 4rem 0;
+    flex-direction: row;
+  }
+
+  .about > p {
+    width: 45%;
+    padding: 1rem;
+    padding-left: 2rem;
+  }
+
+  #map {
+    height: 450px;
+    width: 40%;
+    padding-right: 4rem;
   }
 }
