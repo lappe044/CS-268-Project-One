@@ -47,6 +47,10 @@ p,
   margin: 2rem auto;
 }
 
+.about > p {
+  padding: 3rem;
+  margin: auto;
+}
 #map {
   height: 350px;
   width: 80%;
