@@ -84,9 +84,9 @@ header nav a {
     color: #fbfbfb;
     text-align: center;
     text-decoration: none;
-    padding: 1.5rem;
+    padding: 1rem;
     border: 1px solid #bcabae;
-    font-size: 17px;
+    font-size: 14px;
 }
 nav a:hover {
   color: #bcabae;
