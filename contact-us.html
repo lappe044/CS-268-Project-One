@@ -42,13 +42,13 @@
             <a href="oceania.html">Oceania</a>
             <a href="antarctica.html">Antarctica</a>
             <a href="about.html">About</a>
-            <a href="contact-us.html">Contact</a>
+            <a href="contact-us.php">Contact</a>
             <a href = "login.html">Login</a>
         </nav>
     </header> 
     
     <div id="background">
-        <form action="confirmation.php" method="post">
+    <form action="confirmation.php" method="POST">
             <h2 id="contact-header">Contact Us</h2>
             <div class="info">
                 <div class="row1">
@@ -90,8 +90,8 @@
                 </div>
             </div>
             <div class = "message_area">
-                <textarea placeholder ="Message"></textarea>
-                <div class="btn">send</div>
+                <textarea placeholder ="Message" name="message"></textarea>
+                <div class="btn" onclick = "document.location = 'confirmation.php'">send</div>
             </div>
         </form>
     </div>

@@ -9,6 +9,9 @@
     <script src="toggle-nav.js"></script>
     <title>Contact Us</title>
     <style>
+        html {
+           height: 100%;
+        }   
         body {
             background-image: url("images/switzerland.jpg");
             width: 100%;
@@ -16,7 +19,14 @@
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
-            
+        }
+        h2, p{
+            text-align: center;
+            padding: 1rem;
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1rem;
         }
         </style>
 </head>
@@ -49,9 +59,11 @@
     
     <div id="background">
         <form action="contact-us.html">
-            <div><h2>Thank you for your interest! Your information has been submitted!</h2></div>
-            <div><p>Click the button below to redict to the travel form to submit another trip request.</p></div>
-            <div class="btn">Go Back</div>
+            <div>
+                <h2>Thank you for your interest! Your information has been submitted!</h2>
+                <p>Click the button below to redict to the travel form to submit another trip request.</p>
+                <div class="btn" onclick = "document.location = 'contact-us.html'">Go Back</div>
+            </div>
         </form>
     </div>
     <div id = "footer">
@@ -68,28 +80,35 @@
 </body>
 </html>
 <?php
- // Get a connection for the database
+// Get a connection for the database
  require_once('sql_conn.php');
 
  // checks if there is value to pull
-if ($_POST["origin"] && $_POST["destination"] && $_POST["duration"] ) {
-    $origin = $_POST["origin"];
-    $destination = $_POST["destination"];
-    $duration = $_POST["duration"];
+if ($_POST["fName"] && $_POST["fName"] && $_POST["fName"] && $_POST["pNumber"] && $_POST["location"] && $_POST["start_date"] && $_POST["end_date"] && $_POST["group"] &&  $_POST["message"]) {
+    $fName = $_POST["fName"];
+    $lName =$_POST["lName"];
+    $email = $_POST["email"];
+    $pNumber = $_POST["pNumber"];
+    $loca = $_POST["location"];
+    $start = $_POST["start_date"];
+    $end = $_POST["end_date"];
+    $group = $_POST["group"];
+    $mess = $_POST["message"];
 
-    // checks if value is not null and not empty, resets the values to nothing to prevent accidental database insertion
-    if(!isset($origin) || trim($origin) == '' || !isset($destination) || trim($destination) == '' || !isset($duration) || trim($duration) == '') {
+
+     //checks if value is not null and not empty, resets the values to nothing to prevent accidental database insertion
+    if(!isset($fName) || trim($fName) == '' || !isset($lName) || trim($lName) == '' || !isset($email) || trim($email) == '' || !isset($pNumber) || trim($pNumber) == '' || !isset($loca) || trim($loca) == '' || !isset($start) || trim($start) == '' || !isset($end) || trim($end) == '' || !isset($group) || trim($group) == '' || !isset($message) || trim($message) == '') {
         echo '<script type="text/javascript">';
         echo ' alert("Enter values into all areas")';  
-        echo 'document.getElementById(“origin”).value="";';
-        echo 'document.getElementById(“dest”).value="";';
-        echo 'document.getElementById(“dur”).value="";';
         echo '</script>';
     
-    } else {
-
+   } else {
+        
+    */
         // Create a query for the database
-        $insert = "INSERT INTO flights (origin, destination, duration) values ('$origin', '$destination', '$duration')";
+
+        $insert = "INSERT INTO request (f_name, l_name, email, phone_Number, location, start_date, end_date, group, message ) values ('$fName', '$lName', '$email', '$pNumber', '$loca', '$start', '$end', '$group', '$message')";
+        
 
     // Get a response from the database by sending the connection
     // and the query
@@ -97,13 +116,13 @@ if ($_POST["origin"] && $_POST["destination"] && $_POST["duration"] ) {
 
     // If the query executed properly proceed
         if($response){
-            echo "Values successfully added to flights";
+
         } else {
-            echo "Unable to add values to flights";
+            echo "Unable to add values to request";
         }
     
-        }
     }
+   }
   // Close connection to the database
   mysqli_close($dbc);
 
