@@ -3,15 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/jpg" href="images/favicon.png"/>
     <script src="toggle-nav.js"></script>
     <title>Contact Us</title>
     <style>
-        html {
-           height: 100%;
-        }   
+         form {
+           height: 30rem;
+       }
+         html {
+             height: 100%;
+         }
+         .btn {
+           bottom: 1rem;
+       }
         body {
             background-image: url("images/switzerland.jpg");
             width: 100%;
@@ -28,6 +35,7 @@
         p {
             font-size: 1rem;
         }
+    
         </style>
 </head>
 <body id="contact-body">
@@ -79,12 +87,14 @@
 
 </body>
 </html>
+
 <?php
+/*
 // Get a connection for the database
  require_once('sql_conn.php');
 
  // checks if there is value to pull
-if ($_POST["fName"] && $_POST["fName"] && $_POST["fName"] && $_POST["pNumber"] && $_POST["location"] && $_POST["start_date"] && $_POST["end_date"] && $_POST["group"] &&  $_POST["message"]) {
+if ($_POST["fName"] && $_POST["lName"] && $_POST["email"] && $_POST["pNumber"] && $_POST["location"] && $_POST["start_date"] && $_POST["end_date"] && $_POST["group"] &&  $_POST["message"]) {
     $fName = $_POST["fName"];
     $lName =$_POST["lName"];
     $email = $_POST["email"];
@@ -104,7 +114,7 @@ if ($_POST["fName"] && $_POST["fName"] && $_POST["fName"] && $_POST["pNumber"] &
     
    } else {
         
-    */
+
         // Create a query for the database
 
         $insert = "INSERT INTO request (f_name, l_name, email, phone_Number, location, start_date, end_date, group, message ) values ('$fName', '$lName', '$email', '$pNumber', '$loca', '$start', '$end', '$group', '$message')";
@@ -126,5 +136,5 @@ if ($_POST["fName"] && $_POST["fName"] && $_POST["fName"] && $_POST["pNumber"] &
   // Close connection to the database
   mysqli_close($dbc);
 
-
+*/
 ?>
