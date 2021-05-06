@@ -15,6 +15,7 @@
        }
          html {
              height: 100%;
+             bottom: 0;
          }
          .btn {
            bottom: 1rem;
