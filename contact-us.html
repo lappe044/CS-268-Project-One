@@ -48,50 +48,46 @@
     </header> 
     
     <div id="background">
-    <form action="confirmation.php" method="POST">
+    <form action="confirmation.php" method="post">
             <h2 id="contact-header">Contact Us</h2>
             <div class="info">
                 <div class="row1">
-                    <input type="text" class="input" id="fName" placeholder="First Name">
-                    <input type="text" class="input" id="lName" placeholder="Last Name">
+                    <input type="text" class="input" name="fName" placeholder="First Name">
+                    <input type="text" class="input" name="lName" placeholder="Last Name">
                 </div>
                 <div class="row2">
-                    <input type="email" class="input" id="email" placeholder="Email">
-                    <input type="text" class="input" id="pNumber" placeholder="Phone Number">
+                    <input type="email" class="input" name="email" placeholder="Email">
+                    <input type="text" class="input" name="pNumber" placeholder="Phone Number">
                 </div>
                 <div class="col1">
                     <p>
                         <fieldset> 
                             <legend>Location</legend> 
-                            <label><input type="radio" name="location"/>Africa</label>
-                            <label><input type="radio" name="location"/>Asia</label>
-                            <label><input type="radio" name="location"/>Europe</label>
-                            <label><input type="radio" name="location"/>Antarctica</label>
-                            <label><input type="radio" name="location"/>North America</label>
-                            <label><input type="radio" name="location"/>South America</label>
-                            <label><input type="radio" name="location"/>Oceania</label>                            
+                            <label><input type="radio" name="loca" value="Africa"/>Africa</label>
+                            <label><input type="radio" name="loca" value="Asia" />Asia</label>
+                            <label><input type="radio" name="loca" value="Europe" />Europe</label>
+                            <label><input type="radio" name="loca" value="Antartica" />Antarctica</label>
+                            <label><input type="radio" name="loca" value="North America" />North America</label>
+                            <label><input type="radio" name="loca" value="South America" />South America</label>
+                            <label><input type="radio" name="loca" value="Oceania" />Oceania</label>                            
                         </fieldset>
                     </p>
                 </div>
                 <div class="col2">
-                    <p>
+
                         <label for="start_date">Desired Start Date</label>
                         <input type="date" id="start_date" name="start_date">
-                    </p>
-               
-                    <p>
+                    
                         <label for="end_date">Desired End Date</label>
                         <input type="date" id="end_date" name="end_date">
-                    </p>
-                    <p>           
+                    
                         <label for="group">Number of people in group</label>
                         <input type="number" id="group" name="group" value="1" min="1" max="20">                
-                    </p>
                 </div>
             </div>
             <div class = "message_area">
                 <textarea placeholder ="Message" name="message"></textarea>
-                <div class="btn" onclick = "document.location = 'confirmation.php'">send</div>
+                <button type = "submit" class="btn">send</button>
             </div>
         </form>
     </div>
