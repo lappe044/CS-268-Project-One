@@ -28,6 +28,8 @@
         // Get a response from the database by sending the connection
         // and the query
         $response = @mysqli_query($dbc, $query);
+        session_start();
+        $_SESSION['Id']=$row['Id']; 
 
           
         // Close connection
