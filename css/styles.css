@@ -241,6 +241,20 @@ input[type="number"] {
   color: #c5ecfd;
 }
 
+button {
+  background: #2e8db6;
+  color: white;
+  padding: 14px 20px;
+  margin: 15px 0;
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+button:hover, .btn:hover {
+  opacity: 0.8;
+}
+
 .btn {
   background: #2e8db6;
   text-align: center;
@@ -249,6 +263,7 @@ input[type="number"] {
   color: #fff;
   cursor: pointer;
   text-transform: uppercase;
+  text-align: center;
 }
 .info {
   display: flex;
@@ -288,8 +303,10 @@ input[type="number"] {
 #footer {
   display: flex;
   justify-content: space-between;
-  height: 50px;
+  height: 70px;
   background-color: #2d2e2e;
+  margin-top: 0.5%;
+  margin-bottom: 0px;
   bottom: 0;
 }
 

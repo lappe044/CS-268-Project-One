@@ -17,7 +17,7 @@
                 $group = $_REQUEST["group"];;
                 $message = $_REQUEST["message"];
                         
-                $insert = "INSERT INTO request (F_name, L_name, Email, Phone_Number, Loca, S_date, E_date, People, Mess) VALUES ('$fName', '$lName', '$email', '$pNumber', '$loca', '$start', '$end', '$group', '$message')";
+                $insert = "INSERT INTO request (F_name, L_name, Email, Phone_Number, Loca, S_date, E_date, People, Message) VALUES ('$fName', '$lName', '$email', '$pNumber', '$loca', '$start', '$end', '$group', '$message')";
                 
                 // Get a response from the database by sending the connection
                 // and the query

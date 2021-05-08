@@ -223,12 +223,13 @@ a {
     width: unset;
   }
   header nav a {
-    border: none;
-    padding: 14px 16px;
-    margin-bottom: 0;
-    display: inline-block;
-    font-size: 17px;
-    width: 10%;
+    display: block;
+    color: #fbfbfb;
+    text-align: center;
+    text-decoration: none;
+    padding: 1rem;
+    border: 1px solid #bcabae;
+    font-size: 14px;
   }
   header {
     position: sticky;

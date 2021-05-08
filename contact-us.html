@@ -52,18 +52,18 @@
             <h2 id="contact-header">Contact Us</h2>
             <div class="info">
                 <div class="row1">
-                    <input type="text" class="input" name="fName" placeholder="First Name">
-                    <input type="text" class="input" name="lName" placeholder="Last Name">
+                    <input type="text" class="input" name="fName" placeholder="First Name" required>
+                    <input type="text" class="input" name="lName" placeholder="Last Name" required>
                 </div>
                 <div class="row2">
-                    <input type="email" class="input" name="email" placeholder="Email">
-                    <input type="text" class="input" name="pNumber" placeholder="Phone Number">
+                    <input type="email" class="input" name="email" placeholder="Email" required>
+                    <input type="text" class="input" name="pNumber" placeholder="Phone Number" required>
                 </div>
                 <div class="col1">
                     <p>
                         <fieldset> 
                             <legend>Location</legend> 
-                            <label><input type="radio" name="loca" value="Africa"/>Africa</label>
+                            <label><input type="radio" name="loca" value="Africa" required/>Africa</label>
                             <label><input type="radio" name="loca" value="Asia" />Asia</label>
                             <label><input type="radio" name="loca" value="Europe" />Europe</label>
                             <label><input type="radio" name="loca" value="Antartica" />Antarctica</label>
@@ -76,19 +76,19 @@
                 <div class="col2">
 
                         <label for="start_date">Desired Start Date</label>
-                        <input type="date" id="start_date" name="start_date">
+                        <input type="date" id="start_date" name="start_date" required>
                     
                         <label for="end_date">Desired End Date</label>
-                        <input type="date" id="end_date" name="end_date">
+                        <input type="date" id="end_date" name="end_date" required>
                     
                         <label for="group">Number of people in group</label>
                         <input type="number" id="group" name="group" value="1" min="1" max="20">                
                 </div>
             </div>
             <div class = "message_area">
-                <textarea placeholder ="Message" name="message"></textarea>
-                <button type = "submit" class="btn">send</button>
+                <textarea placeholder ="Message" name="message" required></textarea>
             </div>
+            <button type = "submit" class="button">Submit</button>
         </form>
     </div>
     <div id = "footer">
