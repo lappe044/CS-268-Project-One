@@ -28,11 +28,12 @@
         // Get a response from the database by sending the connection
         // and the query
         $response = @mysqli_query($dbc, $query);
+       
 
           
         // Close connection
         mysqli_close($dbc);
-        header('Location: client_account.php'); 
+        header('Location: login.html'); 
         ?>
     </center>
 
