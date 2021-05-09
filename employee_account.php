@@ -10,7 +10,7 @@
     <link rel="stylesheet" href = "css/index.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel = "stylesheet" href = "css/about.css">
-    <script src="toggle-nav.js"></script>
+    <script src="js/toggle-nav.js"></script>
 
     <title>Account</title>
 </head>

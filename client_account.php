@@ -9,7 +9,7 @@
     <link rel="stylesheet" href = "css/account.css">
     <link rel="stylesheet" href = "css/about.css">
     <link rel="stylesheet" href="css/global.css">
-    <script src="toggle-nav.js"></script>  
+    <script src="js/toggle-nav.js"></script>  
     <title>Account</title>
 </head>
 <body>

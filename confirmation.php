@@ -2,7 +2,7 @@
     <body>
         <center>
             <?php
-                session_start();
+                
                 // Get a connection for the database
                 require_once('sql_conn.php');
 
@@ -16,20 +16,25 @@
                 $end = $_REQUEST["end_date"];
                 $group = $_REQUEST["group"];;
                 $message = $_REQUEST["message"];
-                        
-                $insert = "INSERT INTO request (F_name, L_name, Email, Phone_Number, Loca, S_date, E_date, People, Message) VALUES ('$fName', '$lName', '$email', '$pNumber', '$loca', '$start', '$end', '$group', '$message')";
+
+                $query = "INSERT INTO `request`(`f_name`, `l_name`, `email`, `phone_number`, `loca`, `s_date`, `end_date`, `group`, `mess`) VALUES ('$fName','$lName','$email','$pNumber','$loca','$start','$end','$group','$message')"; 
+                
                 
                 // Get a response from the database by sending the connection
                 // and the query
-                $response = @mysqli_query($dbc, $insert);
+                $response = @mysqli_query($dbc, $query);
 
                 // If the query executed properly proceed
-                if(!$response)
+                if(!$response){
                     echo "Unable to add values to request";
-                          
-                // Close connection to the database
+                }else{
+                     // Close connection to the database
                 mysqli_close($dbc);
-                header('Location: thank-you.html'); 
+                header('Location: thank-you.html');
+
+                }
+                          
+                
             ?>
         </center>
     </body>
