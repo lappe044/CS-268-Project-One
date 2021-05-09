@@ -229,6 +229,7 @@ a {
     text-decoration: none;
     padding: 1rem;
     font-size: 17px;
+    border: none;
   }
   header {
     position: sticky;

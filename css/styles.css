@@ -300,6 +300,7 @@ button:hover,
 
 /***end contact format */
 /**footer */
+
 #footer {
   display: flex;
   justify-content: space-between;
@@ -313,7 +314,7 @@ button:hover,
 .left {
   flex-direction: row;
   color: white;
-  margin: 5px 2px;
+  margin-top: 15px;
   font-size: 30px;
 }
 
